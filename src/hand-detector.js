@@ -1,18 +1,34 @@
-export async function initHandDetector() {
-  const hands = new Hands({
-    locateFile: (file) =>
-      `https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/${file}`
-  });
+export async function initHandDetector(onProgress) {
+  return new Promise((resolve, reject) => {
+    const timeout = setTimeout(() => {
+      reject(new Error('手势模型加载超时，请检查网络连接后刷新页面'));
+    }, 30000);
 
-  hands.setOptions({
-    maxNumHands: 2,
-    modelComplexity: 1,
-    minDetectionConfidence: 0.7,
-    minTrackingConfidence: 0.5
-  });
+    const hands = new Hands({
+      locateFile: (file) => {
+        if (onProgress) onProgress('正在下载模型...');
+        return `https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/${file}`;
+      }
+    });
 
-  await hands.initialize();
-  return hands;
+    hands.setOptions({
+      maxNumHands: 2,
+      modelComplexity: 1,
+      minDetectionConfidence: 0.7,
+      minTrackingConfidence: 0.5
+    });
+
+    if (onProgress) onProgress('正在初始化手势识别...');
+    hands.initialize()
+      .then(() => {
+        clearTimeout(timeout);
+        resolve(hands);
+      })
+      .catch(err => {
+        clearTimeout(timeout);
+        reject(new Error(`手势模型加载失败: ${err.message}`));
+      });
+  });
 }
 
 /**

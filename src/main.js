@@ -28,21 +28,27 @@ async function main() {
   // 5. 物理引擎
   const physics = createPhysicsEngine(PARTICLE_COUNT);
 
-  // 6. 手势检测
-  const hands = await initHandDetector();
-
-  // 7. 手势分类器
-  const classifier = createGestureClassifier();
-
-  // 8. 音效
-  const audio = createAudioEngine();
-
-  // 9. UI
+  // 6-8. UI 元素
   const loadingEl = document.getElementById('loading');
+  const loadingText = loadingEl.querySelector('p');
   const guidanceEl = document.getElementById('guidance');
   const statusEl = document.getElementById('status-indicator');
   const statusDot = statusEl.querySelector('.dot');
   const statusLabel = statusEl.querySelector('.label');
+
+  // 更新加载文字
+  loadingText.textContent = '正在加载手势模型...（约 10 秒）';
+
+  // 手势检测（带进度回调）
+  const hands = await initHandDetector((msg) => {
+    loadingText.textContent = msg;
+  });
+
+  // 手势分类器
+  const classifier = createGestureClassifier();
+
+  // 音效
+  const audio = createAudioEngine();
 
   loadingEl.classList.add('hidden');
   guidanceEl.classList.remove('hidden');
@@ -167,6 +173,13 @@ function updateStatusIndicator(state, el, dot, label) {
 
 main().catch(err => {
   console.error('启动失败:', err);
-  document.getElementById('loading').innerHTML =
-    `<p style="color:#ff6b6b;">启动失败: ${err.message}<br><small>请确保已授予摄像头权限并使用 HTTPS</small></p>`;
+  const loadingEl = document.getElementById('loading');
+  const msg = err.message || String(err);
+  if (msg.includes('not allowed') || msg.includes('Permission')) {
+    loadingEl.innerHTML = `<p style="color:#ff6b6b;">摄像头权限被拒绝<br><small>请允许摄像头访问后刷新页面</small></p>`;
+  } else if (msg.includes('超时')) {
+    loadingEl.innerHTML = `<p style="color:#ffb060;">${msg}<br><small>请检查网络后刷新页面重试</small></p>`;
+  } else {
+    loadingEl.innerHTML = `<p style="color:#ff6b6b;">启动失败: ${msg}<br><small>请确保使用 HTTPS 并授予摄像头权限</small></p>`;
+  }
 });
