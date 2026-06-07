@@ -73,7 +73,7 @@ export function applyRadialForce(positions, engine, centerX, centerY, force, rad
     const d = dist(positions[idx3], positions[idx3 + 1], centerX, centerY);
 
     if (d < radius && d > 0.1) {
-      const strength = force / (d * d + 100);
+      const strength = force / (d + 50);
       const dx = (positions[idx3] - centerX) / d;
       const dy = (positions[idx3 + 1] - centerY) / d;
       forces[idx2] += dx * strength;

@@ -5,14 +5,14 @@ import { dist, rand } from './utils.js';
 export function applyRipple(positions, engine, handCenter, screenW, screenH) {
   const cx = handCenter.x;
   const cy = handCenter.y;
-  applyRadialForce(positions, engine, cx, cy, 1200, 280);
+  applyRadialForce(positions, engine, cx, cy, 50000, 280);
   return { cx, cy, time: 0 };
 }
 
 export function applyAttract(positions, engine, handCenter, screenW, screenH) {
   const cx = handCenter.x;
   const cy = handCenter.y;
-  applyRadialForce(positions, engine, cx, cy, -800, 250);
+  applyRadialForce(positions, engine, cx, cy, -30000, 250);
   return { cx, cy };
 }
 
@@ -55,14 +55,14 @@ export function applyRingAttraction(positions, engine, classifier, screenW, scre
 
     if (d > radius * 0.5 && d < radius * 1.8) {
       const radialDir = (d - radius) > 0 ? -1 : 1;
-      const radialStrength = Math.abs(d - radius) * 3;
+      const radialStrength = Math.abs(d - radius) * 60;
       const dx = (positions[idx3] - cx) / d;
       const dy = (positions[idx3 + 1] - cy) / d;
       forces[idx2] += dx * radialStrength * radialDir;
       forces[idx2 + 1] += dy * radialStrength * radialDir;
 
-      forces[idx2] += -dy * 40;
-      forces[idx2 + 1] += dx * 40;
+      forces[idx2] += -dy * 800;
+      forces[idx2 + 1] += dx * 800;
 
       driven[i] = 1;
     }
