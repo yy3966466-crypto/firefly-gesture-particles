@@ -25,7 +25,7 @@ export function createVideoElement() {
   video.setAttribute('autoplay', '');
   video.setAttribute('muted', '');
   // 不能用 display:none，MediaPipe 访问不到视频帧
-  video.style.cssText = 'position:fixed;top:0;left:0;width:1px;height:1px;opacity:0.01;pointer-events:none;z-index:-1;';
+  video.style.cssText = 'position:fixed;top:0;left:0;width:320px;height:240px;opacity:0.01;pointer-events:none;z-index:-1;';
   document.body.appendChild(video);
   return video;
 }

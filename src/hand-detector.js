@@ -14,8 +14,8 @@ export async function initHandDetector(onProgress) {
     hands.setOptions({
       maxNumHands: 2,
       modelComplexity: 1,
-      minDetectionConfidence: 0.7,
-      minTrackingConfidence: 0.5
+      minDetectionConfidence: 0.3,
+      minTrackingConfidence: 0.3
     });
 
     if (onProgress) onProgress('正在初始化手势识别...');
@@ -35,6 +35,8 @@ export async function initHandDetector(onProgress) {
  * 从 video 检测手部，返回 landmarks 列表（屏幕坐标，已镜像）。
  * 每个 landmark 为 { x, y } 像素坐标。
  */
+let _debugCanvas = null;
+
 export async function detectHands(hands, videoElement) {
   if (!videoElement) { window.__handDebug = 'no_video'; return []; }
   if (videoElement.readyState < 2) {
@@ -42,9 +44,20 @@ export async function detectHands(hands, videoElement) {
     return [];
   }
 
+  // 通过 canvas 中转，确保 MediaPipe 能稳定读取视频帧
+  if (!_debugCanvas) {
+    _debugCanvas = document.createElement('canvas');
+    _debugCanvas.width = videoElement.videoWidth || 640;
+    _debugCanvas.height = videoElement.videoHeight || 480;
+    _debugCanvas.style.cssText = 'position:fixed;top:0;left:320px;width:160px;height:120px;opacity:0.3;z-index:999;border:1px solid red;';
+    document.body.appendChild(_debugCanvas);
+  }
+  const ctx = _debugCanvas.getContext('2d');
+  ctx.drawImage(videoElement, 0, 0, _debugCanvas.width, _debugCanvas.height);
+
   let results;
   try {
-    results = await hands.send({ image: videoElement });
+    results = await hands.send({ image: _debugCanvas });
   } catch (e) {
     window.__handDebug = 'send_err:' + e.message;
     return [];
@@ -56,8 +69,8 @@ export async function detectHands(hands, videoElement) {
   }
 
   window.__handDebug = 'OK:' + results.multiHandLandmarks.length;
-  const width = videoElement.videoWidth;
-  const height = videoElement.videoHeight;
+  const width = _debugCanvas.width;
+  const height = _debugCanvas.height;
 
   return results.multiHandLandmarks.map((landmarks, idx) => {
     const handedness = results.multiHandedness?.[idx]?.label || 'unknown';
