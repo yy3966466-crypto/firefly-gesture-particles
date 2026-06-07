@@ -308,18 +308,14 @@ async function main() {
     updateParticlesBase(p, now / 1000, dt, w, h, ripples);
     ringViz.update(dt);
 
-    // 状态指示
+    // 状态指示（含调试）
     const labels = { 0: '', 1: '炸开', 2: 'claude code', 3: 'love life' };
     const st = state === State.TWO_HOLD ? 2 : state === State.THREE_HOLD ? 3 :
               state === State.TWO_FORM ? 2 : state === State.THREE_FORM ? 3 :
               state === State.ONE_EXPLODE ? 1 : 0;
-    if (fingers > 0) {
-      statusEl.className = 'active';
-      statusLabel.textContent = `👆 ${fingers}指 · ${labels[st] || ''}`;
-    } else {
-      statusEl.className = '';
-      statusLabel.textContent = '';
-    }
+    const r = window.__lastResults;
+    statusEl.className = fingers > 0 ? 'active' : '';
+    statusLabel.textContent = `f:${fingers} s:${state} r:${r ? 'Y' : 'N'}`;
 
     renderer.render(scene, camera);
   }
