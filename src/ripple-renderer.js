@@ -7,7 +7,7 @@ export function createRippleRenderer(scene) {
     const segments = 64;
     const geometry = new THREE.RingGeometry(5, 8, segments);
     const material = new THREE.MeshBasicMaterial({
-      color: 0xb4ffa0,
+      color: 0x22d3ee,
       side: THREE.DoubleSide,
       transparent: true,
       opacity: 0.5,

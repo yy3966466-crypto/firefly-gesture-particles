@@ -51,8 +51,8 @@ export function createParticleSystem(width, height) {
     positions[i * 3] = x;
     positions[i * 3 + 1] = y;
     positions[i * 3 + 2] = 0;
-    sizes[i] = rand(2, 6);
-    alphas[i] = rand(0.4, 0.9);
+    sizes[i] = rand(3, 10);
+    alphas[i] = rand(0.5, 1.0);
     phases[i] = rand(0, Math.PI * 2);
     amplitudes[i] = rand(20, 60);
     frequencies[i] = rand(0.5, 1.5);
@@ -70,8 +70,8 @@ export function createParticleSystem(width, height) {
     fragmentShader,
     uniforms: {
       uTime: { value: 0 },
-      uColor1: { value: new THREE.Color('#b4ffa0') },
-      uColor2: { value: new THREE.Color('#f0ffc8') }
+      uColor1: { value: new THREE.Color('#22d3ee') },
+      uColor2: { value: new THREE.Color('#f0f9ff') }
     },
     transparent: true,
     blending: THREE.AdditiveBlending,

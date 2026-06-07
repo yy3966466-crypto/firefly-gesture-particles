@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { isMobile, PARTICLE_COUNT } from './utils.js';
 import { createVideoElement } from './camera.js';
-import { createScene, handleResize } from './scene.js';
+import { createScene, handleResize, setVideoAspect } from './scene.js';
 import { createParticleSystem, updateParticleWave } from './particle-engine.js';
 import { createPhysicsEngine, integrate } from './physics.js';
 import { initHandDetector, detectHands } from './hand-detector.js';
@@ -42,6 +42,9 @@ async function main() {
   const { hands } = await initHandDetector(video, (msg) => {
     loadingText.textContent = msg;
   });
+
+  // 设置视频比例（避免背景变形）
+  setTimeout(() => setVideoAspect(video), 500);
 
   // 手势分类器
   const classifier = createGestureClassifier();
