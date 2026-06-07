@@ -128,9 +128,8 @@ async function main() {
       }
 
       // 状态指示器（显示调试信息）
-      const handIcon = hasHand ? '🖐' : '👻';
       updateStatusIndicator(state, statusEl, statusDot, statusLabel);
-      statusLabel.textContent = statusLabel.textContent + ' ' + handIcon + '#' + handData.length;
+      statusLabel.textContent = (window.__handDebug || '?') + ' st:' + state;
 
       prevGesture = state;
     });

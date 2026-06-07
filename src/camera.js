@@ -21,7 +21,11 @@ export async function initCamera(videoElement) {
 
 export function createVideoElement() {
   const video = document.createElement('video');
-  video.style.display = 'none';
+  video.setAttribute('playsinline', '');
+  video.setAttribute('autoplay', '');
+  video.setAttribute('muted', '');
+  // 不能用 display:none，MediaPipe 访问不到视频帧
+  video.style.cssText = 'position:fixed;top:0;left:0;width:1px;height:1px;opacity:0.01;pointer-events:none;z-index:-1;';
   document.body.appendChild(video);
   return video;
 }

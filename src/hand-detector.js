@@ -36,19 +36,33 @@ export async function initHandDetector(onProgress) {
  * 每个 landmark 为 { x, y } 像素坐标。
  */
 export async function detectHands(hands, videoElement) {
-  if (!videoElement || videoElement.readyState < 2) return [];
+  if (!videoElement) { window.__handDebug = 'no_video'; return []; }
+  if (videoElement.readyState < 2) {
+    window.__handDebug = 'ready:' + videoElement.readyState + ' ' + videoElement.videoWidth + 'x' + videoElement.videoHeight;
+    return [];
+  }
 
-  const results = await hands.send({ image: videoElement });
+  let results;
+  try {
+    results = await hands.send({ image: videoElement });
+  } catch (e) {
+    window.__handDebug = 'send_err:' + e.message;
+    return [];
+  }
 
-  if (!results || !results.multiHandLandmarks) return [];
+  if (!results || !results.multiHandLandmarks || results.multiHandLandmarks.length === 0) {
+    window.__handDebug = 'empty:' + (results ? 'has_results' : 'no_results');
+    return [];
+  }
 
+  window.__handDebug = 'OK:' + results.multiHandLandmarks.length;
   const width = videoElement.videoWidth;
   const height = videoElement.videoHeight;
 
   return results.multiHandLandmarks.map((landmarks, idx) => {
     const handedness = results.multiHandedness?.[idx]?.label || 'unknown';
     const points = landmarks.map(l => ({
-      x: (1 - l.x) * width,   // 镜像 x
+      x: (1 - l.x) * width,
       y: l.y * height
     }));
     return { points, handedness };
