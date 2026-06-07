@@ -91,10 +91,12 @@ export function createParticleSystem(width, height) {
   };
 }
 
-export function updateParticleWave(particles, time, dt) {
+export function updateParticleWave(particles, time, dt, driven) {
   const { positions, basePositions, phases, amplitudes, frequencies, count } = particles;
 
   for (let i = 0; i < count; i++) {
+    if (driven && driven[i]) continue;
+
     const bx = basePositions[i * 2];
     const by = basePositions[i * 2 + 1];
     const phase = phases[i];

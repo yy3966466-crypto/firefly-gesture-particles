@@ -39,8 +39,8 @@ export function integrate(positions, basePositions, engine, dt, width, height) {
       // 边界反弹
       if (positions[idx3] < 0) { positions[idx3] = 0; velocities[idx2] *= -0.3; }
       if (positions[idx3] > width) { positions[idx3] = width; velocities[idx2] *= -0.3; }
-      if (positions[idx3 + 1] < 0) { positions[idx3 + 1] = 0; velocities[idx3 + 1] *= -0.3; }
-      if (positions[idx3 + 1] > height) { positions[idx3 + 1] = height; velocities[idx3 + 1] *= -0.3; }
+      if (positions[idx3 + 1] < 0) { positions[idx3 + 1] = 0; velocities[idx2 + 1] *= -0.3; }
+      if (positions[idx3 + 1] > height) { positions[idx3 + 1] = height; velocities[idx2 + 1] *= -0.3; }
 
       // 速度很小时退出驱动模式
       if (Math.abs(velocities[idx2]) < 0.5 && Math.abs(velocities[idx2 + 1]) < 0.5) {

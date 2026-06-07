@@ -119,7 +119,7 @@ async function main() {
     integrate(particles.positions, particles.basePositions, physics, dt, w, h);
 
     // 波浪更新（未被外力驱动的粒子）
-    updateParticleWave(particles, performance.now() / 1000, dt);
+    updateParticleWave(particles, performance.now() / 1000, dt, physics.driven);
 
     // 涟漪动画
     rippleRenderer.update(dt);
