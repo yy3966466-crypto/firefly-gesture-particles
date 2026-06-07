@@ -218,8 +218,6 @@ function VideoBackground({ videoRef }) {
     const tex = new THREE.VideoTexture(video);
     tex.minFilter = THREE.LinearFilter;
     tex.magFilter = THREE.LinearFilter;
-    tex.repeat.set(-1, 1);
-    tex.offset.set(1, 0);
     if (matRef.current) matRef.current.map = tex;
   }, [videoRef]);
 

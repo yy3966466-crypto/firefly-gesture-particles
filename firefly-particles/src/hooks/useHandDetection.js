@@ -24,8 +24,8 @@ export function useHandDetection(videoRef) {
         },
         runningMode: 'VIDEO',
         numHands: 1,
-        minHandDetectionConfidence: 0.5,
-        minTrackingConfidence: 0.5
+        minHandDetectionConfidence: 0.7,
+        minTrackingConfidence: 0.6
       });
       handLandmarkerRef.current = handLandmarker;
       setReady(true);
@@ -49,16 +49,28 @@ export function useHandDetection(videoRef) {
       const lm = results.landmarks[0];
       // 指尖: 4(拇指), 8(食指), 12(中指), 16(无名指), 20(小指)
       // MCP:  2(拇指), 5(食指), 9(中指), 13(无名指), 17(小指)
-      const tips = [4, 8, 12, 16, 20];
-      const mcps = [2, 5, 9, 13, 17];
+      // PIP:  3(拇指), 6(食指), 10(中指), 14(无名指), 18(小指)
+      const wrist = lm[0];
       let count = 0;
-      for (let i = 0; i < 5; i++) {
-        if (lm[tips[i]].y < lm[mcps[i]].y) count++;
+
+      // 拇指: 比较指尖到手腕距离 vs IP关节到手腕距离
+      const thumbTipDist = Math.hypot(lm[4].x - wrist.x, lm[4].y - wrist.y);
+      const thumbIpDist = Math.hypot(lm[3].x - wrist.x, lm[3].y - wrist.y);
+      if (thumbTipDist > thumbIpDist * 1.1) count++;
+
+      // 其余四指: 比较指尖到手腕距离 vs PIP到手腕距离
+      // PIP 比 MCP 更可靠（MCP可能在手掌内）
+      const tips = [8, 12, 16, 20];
+      const pips = [6, 10, 14, 18];
+      for (let i = 0; i < 4; i++) {
+        const tipDist = Math.hypot(lm[tips[i]].x - wrist.x, lm[tips[i]].y - wrist.y);
+        const pipDist = Math.hypot(lm[pips[i]].x - wrist.x, lm[pips[i]].y - wrist.y);
+        if (tipDist > pipDist * 1.05) count++;
       }
       setFingerCount(count);
-      // 食指指尖 NDC (0~1, y 向下)，镜像 x
+      // 食指指尖 NDC (0~1, y 向下)
       const tip = lm[8];
-      setIndexTipNDC({ x: 1 - tip.x, y: tip.y });
+      setIndexTipNDC({ x: tip.x, y: tip.y });
     } else {
       setFingerCount(0);
     }
