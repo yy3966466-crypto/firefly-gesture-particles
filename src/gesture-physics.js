@@ -5,14 +5,14 @@ import { dist, rand } from './utils.js';
 export function applyRipple(positions, engine, handCenter, screenW, screenH) {
   const cx = handCenter.x;
   const cy = handCenter.y;
-  applyRadialForce(positions, engine, cx, cy, 50000, 280);
+  applyRadialForce(positions, engine, cx, cy, 150000, 350);
   return { cx, cy, time: 0 };
 }
 
 export function applyAttract(positions, engine, handCenter, screenW, screenH) {
   const cx = handCenter.x;
   const cy = handCenter.y;
-  applyRadialForce(positions, engine, cx, cy, -30000, 250);
+  applyRadialForce(positions, engine, cx, cy, -100000, 300);
   return { cx, cy };
 }
 

@@ -113,7 +113,6 @@ async function main() {
     }
 
     updateStatusIndicator(state, statusEl, statusDot, statusLabel);
-    statusLabel.textContent = (window.__handDebug || '?') + ' ' + state;
 
     prevGesture = state;
 

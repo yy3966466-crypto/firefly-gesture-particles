@@ -5,10 +5,8 @@ export async function initHandDetector(videoElement, onProgress) {
     }, 30000);
 
     const hands = new Hands({
-      locateFile: (file) => {
-        if (onProgress) onProgress('下载中...');
-        return `https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/${file}`;
-      }
+      locateFile: (file) =>
+        `https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/${file}`
     });
 
     hands.setOptions({
@@ -18,14 +16,9 @@ export async function initHandDetector(videoElement, onProgress) {
       minTrackingConfidence: 0.5
     });
 
-    // 使用 MediaPipe 官方 Camera 工具
     const camera = new Camera(videoElement, {
       onFrame: async () => {
-        try {
-          await hands.send({ image: videoElement });
-        } catch (e) {
-          window.__handDebug = 'frame_err:' + e.message;
-        }
+        try { await hands.send({ image: videoElement }); } catch (e) {}
       },
       width: 640,
       height: 480
@@ -33,15 +26,12 @@ export async function initHandDetector(videoElement, onProgress) {
 
     hands.onResults((results) => {
       if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
-        window.__handDebug = 'OK:' + results.multiHandLandmarks.length;
         window.__lastResults = {
           multiHandLandmarks: results.multiHandLandmarks,
           multiHandedness: results.multiHandedness,
-          width: 640,
-          height: 480
+          width: 640, height: 480
         };
       } else {
-        window.__handDebug = 'empty';
         window.__lastResults = null;
       }
     });
@@ -52,10 +42,9 @@ export async function initHandDetector(videoElement, onProgress) {
         clearTimeout(timeout);
         if (onProgress) onProgress('启动摄像头...');
         camera.start().then(() => {
+          if (onProgress) onProgress('就绪');
           resolve({ hands, camera });
-        }).catch(err => {
-          reject(new Error('摄像头启动失败: ' + err.message));
-        });
+        }).catch(err => reject(new Error('摄像头启动失败: ' + err.message)));
       })
       .catch(err => {
         clearTimeout(timeout);

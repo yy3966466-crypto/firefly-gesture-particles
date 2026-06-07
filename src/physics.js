@@ -20,7 +20,7 @@ export function createPhysicsEngine(particleCount) {
 export function integrate(positions, basePositions, engine, dt, width, height) {
   const { velocities, forces, driven } = engine;
   const count = velocities.length / 2;
-  const damping = 0.95;
+  const damping = 0.85;
 
   for (let i = 0; i < count; i++) {
     const idx2 = i * 2;

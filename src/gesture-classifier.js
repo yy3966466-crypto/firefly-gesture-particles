@@ -37,8 +37,8 @@ export const GestureState = {
   CIRCLE_HOLD: 'circle_hold'
 };
 
-const SPREAD_THRESHOLD = 35;
-const FIST_THRESHOLD = 15;
+const SPREAD_THRESHOLD = 25;
+const FIST_THRESHOLD = 10;
 
 export function createGestureClassifier() {
   return {
