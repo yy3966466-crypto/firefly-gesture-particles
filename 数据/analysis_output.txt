@@ -1,0 +1,3347 @@
+Section 4.1.4 starts at paragraph index: 42
+Total paragraphs: 642
+Total tables: 8
+
+========================================================================================================================
+PART 1: ALL PARAGRAPHS FROM SECTION 4.1.4 TO END
+========================================================================================================================
+
+--- Paragraph [42] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.1.4 心率计算与结果验证15
+
+--- Paragraph [43] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.2 呼吸信号处理算法设计与优化16
+
+--- Paragraph [44] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.2.1 LMS自适应滤波算法设计16
+
+--- Paragraph [45] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.2.2 呼吸信号特征提取与呼吸率计算18
+
+--- Paragraph [46] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.2.3 基于MATLAB的算法仿真与参数优化18
+
+--- Paragraph [47] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.3 体温信号校准与处理19
+
+--- Paragraph [48] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.3.1 数字滤波实现19
+
+--- Paragraph [49] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.3.2 线性校准算法设计与优化19
+
+--- Paragraph [50] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第5章  多生理参数综合监护平台构建21
+
+--- Paragraph [51] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.1 平台整体设计方案21
+
+--- Paragraph [52] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.1.1 平台功能需求分析21
+
+--- Paragraph [53] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.1.2 平台模块化架构设计21
+
+--- Paragraph [54] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2 基于MATLAB GUI的平台实现22
+
+--- Paragraph [55] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2.1 信号实时显示模块22
+
+--- Paragraph [56] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2.2 关键参数计算模块23
+
+--- Paragraph [57] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2.3 数据存储模块23
+
+--- Paragraph [58] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2.4 异常报警模块23
+
+--- Paragraph [59] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.3 平台功能调试与验证25
+
+--- Paragraph [60] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第6章  系统性能实验验证与分析26
+
+--- Paragraph [61] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.1 实验平台搭建26
+
+--- Paragraph [62] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.2 实验数据来源26
+
+--- Paragraph [63] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.3 性能评价指标确定27
+
+--- Paragraph [64] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.4 实验结果与分析27
+
+--- Paragraph [65] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.4.1 准确性测试结果27
+
+--- Paragraph [66] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.4.2 稳定性测试结果28
+
+--- Paragraph [67] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.4.3 抗干扰能力测试结果28
+
+--- Paragraph [68] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.5 实验结论28
+
+--- Paragraph [69] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第7章  总结与展望29
+
+--- Paragraph [70] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 7.1 研究工作总结29
+
+--- Paragraph [71] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 7.2 研究创新点29
+
+--- Paragraph [72] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 7.3 研究局限性30
+
+--- Paragraph [73] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 7.4 未来研究展望30
+
+--- Paragraph [74] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 参 考 文 献31
+
+--- Paragraph [75] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 致  谢33
+
+--- Paragraph [76] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 附  录34
+
+--- Paragraph [77] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 附录A：MATLAB核心程序代码34
+
+--- Paragraph [78] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: A.1 FIR带通滤波器设计34
+
+--- Paragraph [79] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: A.2 差分阈值R波检测36
+
+--- Paragraph [80] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: A.3 LMS自适应滤波37
+
+--- Paragraph [81] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 附录B：实验数据截图说明37
+
+--- Paragraph [82] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [83] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [84] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第1章  绪  论
+
+--- Paragraph [85] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1.1 研究背景与意义
+
+--- Paragraph [86] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 随着全球人口老龄化进程持续加快，慢性疾病已经成为威胁人类健康的主要因素。世界卫生组织统计报告显示，心血管疾病位居全球死因首位，每年约造成1790万人死亡。我国已进入深度老龄化社会，65岁及以上人口占比已达14.9%，心血管疾病患者总数超过4.5亿，慢性阻塞性肺疾病等慢性病的患病率也逐年攀升[1-3]。在此背景下，生理参数的长期连续监测对于慢性疾病的早期筛查、病情评估和治疗评价具有重要的意义。
+
+--- Paragraph [87] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 心电、呼吸、体温是人体最为核心的三大生理参数。心电信号反映了心脏电活动状态，是诊断心律失常、心肌缺血等心血管疾病的重要依据；呼吸信号反映了肺通气和换气的功能，对于呼吸系统疾病的监测尤为重要；体温则是人体代谢状态的重要指标，异常的体温值往往能够预示感染或炎症的发生[4-5]。三大参数的协同监测能够全面地捕捉人体生理状态的动态变化，为临床诊断提供了多维度数据的支撑。
+
+--- Paragraph [88] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 目前临床上广泛使用的多参数监护设备大多数为大型台式监护仪，主要应用于ICU、手术室等专业的医疗场景[6]。这类设备虽然监测精度高、功能整体完善，但是由于体积庞大、功耗高、操作复杂、价格昂贵，难以满足家庭慢性病患者的日常监测需求，也无法适应基层医疗资源配置的问题。近年来，便携式、低成本的多生理参数监护设备成为医疗电子领域的研究热点[7]。然而对于现有的便携式设备任然面临着技术挑战：非静息环境下采集的生理信号很容易受到工频干扰、肌电干扰和运动伪影等多种噪声的污染；处理算法往往在噪声抑制与特征保留之间难以达到平衡；多数监测系统仅实现单参数监测或并行显示，未能充分的挖掘参数之间的生理关联[8-9]。
+
+--- Paragraph [89] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: MATLAB作为集数值计算、算法仿真与数据可视化于一体的科学计算平台，在生物医学信号处理领域有着广泛的应用基础[10]。其内置信号处理工具箱为我们提供了丰富的滤波器设计、自适应滤波和特征提取函数，支持快速算法原型设计和性能验证。基于MATLAB平台开展的生理信号处理算法的设计与系统集成研究，可以有效的降低开发的难度，缩短研发的周期，为算法工程化实现提供验证基础。
+
+--- Paragraph [90] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [91] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [92] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本研究以MATLAB为核心开发平台，设计并实现一套多生理参数监护系统，重点研究心电、呼吸、体温信号的处理算法与系统集成的方法。从理论意义上看，本研究提出的融合数字滤波与差分阈值的R波检测方法和采用自适应滤波呼吸率提取的方案，丰富了非平稳生理信号处理的算法体系，为弱生理信号的抗干扰处理与特征提取提供了简洁高效的实现思路。从实践意义上看，优化后的算法有效提升了复杂场景下信号处理的抗干扰能力与检测的精度，构建的综合监护平台实现了生理信号的可视化与数据深度分析，可以应用于家庭慢性疾病患者的长期健康监测和基层医疗的快速参数检测，对缓解基层医疗资源短缺问题、推动移动医疗发展具有实际应用价值[9-10]。
+
+--- Paragraph [93] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1.2 国内外研究现状
+
+--- Paragraph [94] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1.2.1 多生理参数监护系统研究现状
+
+--- Paragraph [95] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 国外对多生理参数监护系统的研究起步较早，技术相对成熟。Philips、GE、Mindray等国际医疗器械企业已推出多款成熟的医用多参数监护仪产品，能够实现心电、呼吸、血氧、血压、体温等多种生理参数的同步监测。近年来，随着微电子和无线通信技术的发展，便携式监护设备成为研究热点。Zou等人[11]提出了基于时空建模的远程生理信号的恢复方法，提升了非接触式生理监测的准确性。Santiago等人[12]研究了基于最大子采样的包络解调方法，应用于阻抗式呼吸信号的检测与分析。
+
+--- Paragraph [96] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 国内在该领域的发展也非常的迅速。童雷等人[6]基于Windows平台设计了下肢康复训练中集成的多生理参数监护系统，实现了心电、血压、血氧、体温等多参数的实时监测显示。王艳芬等人[7]设计了基于嵌入式系统的便携式多生理参数监护仪，在降低成本的同时保持了较好的监测性能。刘辉[13]基于Android平台结合蓝牙传输设计了心电、呼吸信号无线监护系统，实现了信号的无线采集与移动端显示。张明敏等人[9]对多生理参数监护系统的信号处理算法进行了系统研究，提出了多参数融合分析的方法。总体来看，国内在核心算法精度、系统集成度和抗干扰能力方面与国外先进水平仍然存在一定的差距，面向家庭和基层场景的低成本、高精度监护系统仍然有较大的研究空间。
+
+--- Paragraph [97] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1.2.2 生理信号处理算法研究现状
+
+--- Paragraph [98] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 在心电信号处理领域，R波检测是心率计算和心律失常分析的核心基础。传统的R波检测方法，主要包括差分阈值法、小波变换法和模板匹配法这三类。王步青等人[14]基于LabVIEW平台，研究了虚拟心电分析仪中的R波检测算法，实现了虚拟仪器环境下的ECG实时处理。吴建等人[15]则提出了差分阈值与模板匹配相结合的心电R波提取算法，在MIT-BIH数据库上取得了99.2%的检测准确率。李俊凯等人[16]设计了自适应差分阈值R峰检测算法，通过引入回溯判定机制，把检测准确率提升到了99.59%，灵敏度也达到了99.64%。王蔷薇等人[17]也研究了基于提升小波的心电信号R波检测方法，在小波分解的框架下，实现了多尺度的R波定位。
+
+--- Paragraph [99] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 而在呼吸信号处理领域，呼吸信号本身幅值微弱，还很容易受到心电干扰和运动伪差的影响，因此信号去噪与特征提取一直是该方向的研究重点。肖湘[18]研究了基于胸阻抗法的呼吸信号检测关键技术，提出了级联LMS自适应滤波器来抑制心动干扰噪声，让信号的信噪比得到了显著提升。张毅等人[4]也设计了基于LMS自适应滤波的呼吸信号去噪与特征提取方案，有效抑制了运动伪差带来的影响。
+
+--- Paragraph [100] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本研究以MATLAB为核心平台，围绕多生理参数监护系统的算法设计与系统集成展开了研究，主要研究内容包括以下四个方面：
+
+--- Paragraph [101] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （1）生理信号预处理。基于MIT-BIH心律失常数据库和PhysioNet呼吸信号数据库的真实数据，结合了实验室实测的生理信号，构建了生理信号数据集。设计了滑动中值滤波基线校准、频域带通滤波和移动平均平滑等预处理算法，有效抑制了工频干扰、肌电干扰和基线漂移等噪声，为后续的特征提取提供了可靠的信号基础。
+
+--- Paragraph [102] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （2）关键信号处理算法设计与优化。针对心电信号设计了基于频域带通滤波与自适应差分阈值的R波检测方法；针对呼吸信号设计了基于LMS自适应对消的呼吸率提取方案；针对体温信号设计了数字滤波与线性校准的体温处理算法。在MATLAB环境下完成了各算法的仿真实现与参数优化。
+
+--- Paragraph [103] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （3）综合监护平台构建。基于MATLAB GUI搭建了集实时波形显示、心率呼吸率体温等关键参数计算、数据存储和异常报警于一体的综合监护平台，实现了心电、呼吸、体温信号的同步监测与多参数协同处理。
+
+--- Paragraph [104] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （4）系统性能验证。从准确性、稳定性和抗干扰能力三个维度对系统进行了实验验证，通过信噪比（SNR）、均方误差（MSE）、检测准确率等量化指标评估了算法的有效性。
+
+--- Paragraph [105] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本研究采取的技术路线为：文献调研与理论学习→数据集构建与预处理→算法设计与MATLAB仿真→参数优化与测试→综合监护平台构建→系统性能实验验证→结果分析与迭代完善。
+
+--- Paragraph [106] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1.4 论文结构安排
+
+--- Paragraph [107] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本论文共分为七章，各章内容安排如下：第一章为绪论部分，主要阐述本研究的背景与研究意义，梳理综述了国内外相关研究现状，同时明确了本文的核心研究内容与整体技术路线。第二章重点介绍了心电、呼吸、体温信号的监测原理，详细阐述了数字滤波、差分阈值和 LMS 自适应滤波等基础算法的核心原理，以及本研究用到的 MATLAB 仿真技术相关基础。第三章详细说明了生理信号数据集的完整构建过程，具体包括 MIT-BIH 和 PhysioNet 公开数据库的使用、实测信号的采集工作，以及配套的信号预处理方法。第四章重点阐述了心电 R 波检测、呼吸率提取和体温校准三类关键算法的具体设计与优化过程。第五章详细介绍了基于 MATLAB GUI 的多生理参数综合监护平台，说明了平台的整体方案设计与各项功能的实现过程。第六章针对搭建完成的整套系统，开展了全面的实验验证与系统的性能分析。第七章对全文的研究工作进行了系统的总结，分析了本研究的创新点与存在的局限性，同时对该领域未来的研究方向进行了展望。
+
+--- Paragraph [108] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [109] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第2章  相关理论与技术基础
+
+--- Paragraph [110] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.1 核心生理参数的监测原理
+
+--- Paragraph [111] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.1.1 心电信号的产生与监测价值
+
+--- Paragraph [112] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 心电信号是反映心脏电活动最直接的生理信号。在心脏每一次搏动的过程中，窦房结会产生节律性的电脉冲，依次激动了心房和心室，形成了规律的电活动序列。典型的心电波形包含了P波、QRS波群和T波，其中R波的幅值较高、斜率较大，是最容易识别的特征波[2]。心电信号的频率范围在0.05~100 Hz之间，QRS波群的能量主要集中在5~18 Hz的区间内，幅值大约为1~3 mV。通过对心电信号的分析和处理，可以提取出心率、心律和ST段变化等关键临床指标，为心血管疾病的诊断和治疗提供了重要的参考依据。如图2. 1 ECG频带成分分布示意图所示。
+
+--- Paragraph [113] ---
+Has Drawing (Image): True [rId: rId12] [size: cx=5119370, cy=2162175]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [114] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图2. 1 ECG频带成分分布示意图
+
+--- Paragraph [115] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [116] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 心电信号具有微弱性、低频性、非平稳性和随机性的特点。在实际的采集过程中容易受到50 Hz工频干扰、肌电干扰、基线漂移（低于0.5 Hz）和运动伪影等多种噪声的污染。这些干扰信号与心电信号在频域上存在一定的重叠，使得单纯依靠频域滤波难以完全分离，需要结合多种信号处理技术来进行综合处理[5]。因此，设计一种能够有效抑制噪声同时保留心电特征波形的预处理算法具有重要的意义。
+
+--- Paragraph [117] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.1.2 呼吸信号的产生与监测原理
+
+--- Paragraph [118] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 呼吸信号反映了人体肺通气的动态过程。胸阻抗法通过向胸部注入高频低幅的载波电流，测量呼吸过程中胸腔阻抗的变化来间接获取呼吸波形，具有非侵入性和电极易获取的优点，是目前临床应用最广泛的方法[18]。正常成人静息状态下的呼吸频率为12~20次/分钟，频率范围大约在0.1~0.5 Hz。呼吸信号的幅值会受呼吸深度、体脂厚度和电极位置等多种因素的影响。胸阻抗法中的主要干扰包括了心电干扰（1~1.5 Hz）、运动伪差和工频干扰。心电干扰的频谱与呼吸信号存在重叠，采用传统的固定参数滤波器难以有效地将其去除，因此需要引入自适应滤波技术来进行处理[19]。
+
+--- Paragraph [119] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.1.3 体温信号的监测原理与特征
+
+--- Paragraph [120] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 正常人体核心体温维持在36.0~37.3°C的范围内。NTC热敏电阻因其灵敏度高和成本低廉而被广泛应用[20]，其阻值会随温度的升高呈非线性下降。传感器模块内部固件使用 Steinhart-Hart 方程将阻值转换为温度。由于NTC热敏电阻存在着固有的非线性和长期漂移的问题，而且不同的传感器个体之间还存在着参数分散性，因此需要通过校准来加以补偿。体温信号属于一种准静态信号，变化非常缓慢，其频率成分主要集中在0.01 Hz以下，因此可以采用低截止频率的滤波器来抑制电磁干扰和环境温度波动所引起的噪声。
+
+--- Paragraph [121] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.2 生理信号处理基础算法
+
+--- Paragraph [122] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.2.1 数字滤波算法原理
+
+--- Paragraph [123] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 数字滤波是生理信号预处理流程中最核心的步骤，它的主要目的就是从被噪声污染的原始信号中，提取出我们真正需要的有用信息，同时尽可能抑制掉各种干扰成分。根据冲激响应类型的不同，数字滤波器可以分为有限长冲激响应(FIR)滤波器和无限长冲激响应(IIR)滤波器两大类[1]。其中，FIR滤波器因为具有严格的线性相位特性，能够保证信号通过滤波后不会出现相位失真，这一点在心电信号的ST段分析和QRS波群检测中显得尤为重要，因为这些分析都高度依赖于心电波形的时间定位和形状完整性。
+
+--- Paragraph [124] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: FIR滤波器的设计方法有很多种，其中窗函数法是最常用也最容易实现的一种。在众多窗函数中，汉明窗凭借着优异的旁瓣衰减能力和适中的过渡带宽度，得到了最为广泛的应用[5]。滤波器的阶数N是一个非常关键的参数，它会直接影响到滤波器的性能和计算复杂度：阶数越高，滤波器的过渡带就越窄，阻带衰减也越大，滤波效果会更好，但同时计算量也会相应增加，对硬件资源的要求也更高。
+
+--- Paragraph [125] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 上述基于窗函数法的FIR滤波过程，在频域上可以通过快速傅里叶变换和逆快速傅里叶变换来高效实现。首先，我们需要对长度为的输入信号进行点快速傅里叶变换，得到其频域表示，如公式(2-1)所示：
+
+--- Paragraph [126] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text:                                (2-1)
+
+--- Paragraph [127] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 其中，是第个采样点的输入信号值，是第个频率点的频谱分量，是虚数单位。
+
+--- Paragraph [128] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 然后，将信号的频谱与FIR滤波器的频率响应在频域上进行逐点相乘，再对相乘后的结果进行点逆快速傅里叶变换，就可以得到滤波后的时域信号，如公式(2-2)所示：
+
+--- Paragraph [129] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text:             (2-2)
+
+--- Paragraph [130] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 其中，是汉明窗FIR滤波器在第个频率点的频率响应，是逆傅里叶变换的归一化系数。
+
+--- Paragraph [131] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 这种频域实现方式相比直接的时域卷积运算，在滤波器阶数较高时能够显著降低计算复杂度，大大提高心电信号预处理的效率。如下表2.1 不同滤波方法对比，展示了不同滤波方法的优缺点以及使用的场景。
+
+--- Paragraph [132] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 表2.1 不同滤波方法对比
+
+--- Paragraph [133] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 方法
+
+--- Paragraph [134] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 优点
+
+--- Paragraph [135] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 缺点
+
+--- Paragraph [136] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 适用场景
+
+--- Paragraph [137] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: FFT频域
+
+--- Paragraph [138] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 零相位，实现简单，不依赖工具箱
+
+--- Paragraph [139] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: Gibbs边界效应不适合实时流式处理
+
+--- Paragraph [140] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 离线批处理，对相位敏感的应用
+
+--- Paragraph [141] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: FIR时域
+
+--- Paragraph [142] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 线性相位，稳定，可实时
+
+--- Paragraph [143] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 需高阶数需Signal Toolbox
+
+--- Paragraph [144] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 实时流式处理，嵌入式系统
+
+--- Paragraph [145] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: IIR时域
+
+--- Paragraph [146] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 计算效率高，阶数低
+
+--- Paragraph [147] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 非线性相位，可能不稳定
+
+--- Paragraph [148] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 对相位不敏感，计算资源受限
+
+--- Paragraph [149] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [150] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 综合对比上述三种主流滤波方法可以发现，它们各有其适用范围和局限性。对于心电信号预处理而言，波形的相位完整性和形状保真度是首要考虑因素，因为任何相位失真都可能导致ST段偏移、QRS波群形态改变等问题，进而影响后续的心律失常检测和疾病诊断。FFT频域零相位滤波凭借其严格的零相位特性和简单的实现方式，成为了离线心电信号分析中最常用的滤波方法之一。下面
+
+--- Paragraph [151] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图2.2将详细介绍FFT频域零相位滤波的具体实现步骤：
+
+--- Paragraph [152] ---
+Has Drawing (Image): True [rId: rId13] [size: cx=4579620, cy=2694305]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [153] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图2.2 FFT频域滤波原理示意图
+
+--- Paragraph [154] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [155] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.2.2 差分阈值检测算法原理
+
+--- Paragraph [156] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 差分阈值算法正是利用了R波斜率显著大于其他波形的特点，通过差分运算来放大R波与P波、T波等其他波形之间的差异，再结合阈值判定就能实现R波的精准定位了[15-16]。整个算法的具体步骤主要包括差分计算、阈值设定以及伪检测点的去除这三个部分。而自适应差分阈值法在此基础上做了改进，它能够动态更新阈值参数来适应心电信号的变化，不仅计算量小，实时性也很好，因此非常适合应用在心电信号的实时处理场景中。
+
+--- Paragraph [157] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.2.3 LMS自适应滤波算法原理
+
+--- Paragraph [158] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: LMS自适应滤波算法基于最速下降法，通过迭代调整权系数，使滤波器输出与期望信号之间均方误差最小化[18-19]。迭代的步骤为：首先计算输出，其中的为权系数向量、为输入的向量；然后计算误差；最后更新权系数。步长的选择对算法的性能来说至关重要：较大时收敛较快但是稳态误差较大，较小时稳态误差较小但是收敛较慢。LMS算法结构简单、计算复杂度低、稳定性好，适合实时信号处理场景。
+
+--- Paragraph [159] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.3 MATLAB仿真技术基础
+
+--- Paragraph [160] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.3.1 MATLAB信号处理工具包
+
+--- Paragraph [161] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: MATLAB的信号处理工具箱提供了FIR滤波器设计、频响分析和数字滤波等函数，有效地降低了算法开发的编程工作量[10]。此外，该工具箱还提供了频谱分析和时频分析等功能，可以满足生理信号处理中滤波器设计、频谱估计和特征提取等多种不同的需求。
+
+--- Paragraph [162] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.3.2 MATLAB GUI设计基础
+
+--- Paragraph [163] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: MATLAB的App Designer采用了面向对象的编程模式，提供了坐标轴、按钮等各种控件，支持可视化的编辑和回调函数的自动生成[22]，可以快速构建出波形显示、参数显示和控制面板等功能区域。
+
+--- Paragraph [164] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [165] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第3章  生理信号数据集构建与预处理
+
+--- Paragraph [166] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 3.1 真实数据集获取与处理
+
+--- Paragraph [167] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 3.1.1 MIT-BIH心律失常数据库
+
+--- Paragraph [168] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: MIT-BIH心律失常数据库是国际公认的心电信号标准测试数据库，由麻省理工学院与贝斯以色列医院在1980年合作建立[23]。该数据库包含了48条双通道动态心电记录，每条记录的长度大约为30分钟，采样频率为360 Hz，分辨率为11位，涵盖了正常心律、室性早搏、房颤、室颤等多种心律失常类型，并且提供了权威的R波位置标注作为算法评估的金标准。本研究通过MATLAB编写了读取程序，从数据库中选取了6条记录作为主要的测试样本，如下表3.1 测试样本选择说明。
+
+--- Paragraph [169] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 表3.1 测试样本选择说明
+
+--- Paragraph [170] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 记录
+
+--- Paragraph [171] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 节律类型
+
+--- Paragraph [172] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 选择意图
+
+--- Paragraph [173] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 105
+
+--- Paragraph [174] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 室性早搏
+
+--- Paragraph [175] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 验证算法对偶发异位搏动的检测能力
+
+--- Paragraph [176] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 124
+
+--- Paragraph [177] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 正常窦性心律伴偶发早搏
+
+--- Paragraph [178] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 评估基线正常情况下的检测稳定性
+
+--- Paragraph [179] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 208
+
+--- Paragraph [180] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 严重室性心律失常
+
+--- Paragraph [181] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 检验算法对形态多变QRS波的适应性
+
+--- Paragraph [182] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 221
+
+--- Paragraph [183] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 室性早搏
+
+--- Paragraph [184] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 验证对中难度样本的普遍适用性
+
+--- Paragraph [185] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 233
+
+--- Paragraph [186] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 室性早搏伴短阵室速
+
+--- Paragraph [187] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 测试复杂节律模式下的检测鲁棒性
+
+--- Paragraph [188] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 234
+
+--- Paragraph [189] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 正常窦性心律
+
+--- Paragraph [190] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 提供正常基线的对照验证
+
+--- Paragraph [191] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [192] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 3.1.2 PhysioNet呼吸信号数据库
+
+--- Paragraph [193] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: PhysioNet是由Goldberger等人[23]在2000年创建的，汇集了大量的生理信号数据库和开源分析工具。本研究中使用的呼吸信号来源于BIDMC（Beth Israel Deaconess Medical Center）呼吸信号数据库，该数据库由PhysioNet公开提供，记录了手术患者在麻醉恢复期的连续呼吸波形信号，采样频率为125 Hz，与心电信号同步采集。呼吸信号通过胸阻抗法获取，数据涵盖多种呼吸模式，包括正常呼吸、呼吸频率偏快偏慢以及节律不规整等情况，适用于呼吸率估计算法的验证与分析。本研究从中选取了21条记录，数据时长均为8分钟，共包含168分钟的呼吸信号数据，保证了算法验证的充分性。如下表3.2公开数据库详情对比展示了心率和呼吸信号的各种特性内容和数量。
+
+--- Paragraph [194] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 表3.2公开数据库详情对比
+
+--- Paragraph [195] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 特性
+
+--- Paragraph [196] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: MIT-BIH心律失常
+
+--- Paragraph [197] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: BIDMC PPG与呼吸
+
+--- Paragraph [198] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 数据类型
+
+--- Paragraph [199] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 双导联ECG
+
+--- Paragraph [200] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 呼吸+PPG信号
+
+--- Paragraph [201] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 记录数量
+
+--- Paragraph [202] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 48条
+
+--- Paragraph [203] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 53条
+
+--- Paragraph [204] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 单条时长
+
+--- Paragraph [205] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 约30分钟
+
+--- Paragraph [206] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 约8分钟
+
+--- Paragraph [207] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 采样率
+
+--- Paragraph [208] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 360 Hz
+
+--- Paragraph [209] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 125 Hz
+
+--- Paragraph [210] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 文件格式
+
+--- Paragraph [211] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 212格式二进制(.dat)
+
+--- Paragraph [212] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: CSV文本
+
+--- Paragraph [213] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 异常池大小
+
+--- Paragraph [214] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 29条(异常心律)
+
+--- Paragraph [215] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 10条(呼吸异常)
+
+--- Paragraph [216] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 正常池大小
+
+--- Paragraph [217] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5条(正常心律)
+
+--- Paragraph [218] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 11条(正常呼吸)
+
+--- Paragraph [219] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [220] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 基于上述两个互补性数据库的特性，本研究采用基于患者 ID 的分层随机抽样策略构建实验数据集，具体方案如图3.1公开数据库随机抽样策略所示
+
+--- Paragraph [221] ---
+Has Drawing (Image): True [rId: rId14] [size: cx=4319905, cy=2681605]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [222] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图3.1公开数据库随机抽样策略
+
+--- Paragraph [223] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [224] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 3.2 实时生理信号采集
+
+--- Paragraph [225] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本文采用的心电信号来源于 MIT-BIH心律失常数据库，该数据库由麻省理工学院与贝斯以色列医院联合建立，每条记录时长为30分钟，采样频率为360 Hz，包含多种心律失常类型的心电数据。呼吸信号来源于 BIDMC呼吸信号数据库，采用胸阻抗法采集，采样频率为125 Hz，与心电信号同步记录，涵盖正常呼吸和异常呼吸等多种模式。体温信号使用模拟信号源（基于正弦波叠加随机噪声生成），或通过串口连接NTC热敏电阻传感器进行实测。数据管理上，公开数据集预先下载至本地，由MATLAB程序在运行时动态加载和缓存，体温实时数据通过USB串口通信传输至MATLAB程序进行接收处理。
+
+--- Paragraph [226] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 3.3 基于MATLAB的生理信号预处理
+
+--- Paragraph [227] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 3.3.1 数字滤波实现
+
+--- Paragraph [228] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本研究在数字滤波器的设计上采用了两种方式。对于心电信号和呼吸信号，采用了基于FFT的频域带通滤波方法，通过FFT变换将信号转换到频域，保留通带内的频率成分并抑制通带外的干扰，再利用IFFT恢复到时域。对于心电信号，80 Hz的带通滤波，抑制高频心电干扰和低频基线漂移成分。对于体温信号，由于体温变化十分缓慢，采用了基于Hamming窗的FIR低通滤波器，截止频率为0.05 Hz，阶数为20，并利用filtfilt零相位滤波方法消除相位失真，有效抑制电磁干扰[14]。其中心电和呼吸的频域滤波同样具有零相位特性，避免了信号在滤波过程中产生相位失真。
+
+--- Paragraph [229] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 3.3.2 滑动中值滤波基线校正
+
+--- Paragraph [230] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 在生理信号的采集过程中，常常会因为电极的偏移、呼吸运动以及仪器的漂移而产生基线漂移。本研究采用了滑动中值滤波的方法来进行基线的校准，通过一个长度为 0.20 倍采样率的滑动窗口来计算信号的中值作为基线估计，然后从原始信号中减去该基线分量，从而得到去除基线漂移后的信号[1]。该方法能够有效抑制因电极偏移和呼吸运动引起的低频基线波动，算法在MATLAB环境中编程实现。
+
+--- Paragraph [231] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 3.4 预处理结果分析
+
+--- Paragraph [232] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 经过了上述的预处理之后，心电信号的基线漂移得到了有效的抑制，波形的轮廓变得清晰起来，P波、QRS波群和T波的可辨识度也有了显著的提高。呼吸信号的周期性变得更加明显，体温信号的短期波动也有所减小。这些预处理的结果表明，所采用的方法能够有效地提升原始信号的质量，为后续的特征提取和参数计算提供了可靠的信号基础。图3.2预处理前后的心电信号波形对比展示了预处理前后的心电信号波形对比的情况。
+
+--- Paragraph [233] ---
+Has Drawing (Image): True [rId: rId15] [size: cx=5272405, cy=3168015]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [234] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图3.2预处理前后的心电信号波形对比
+
+--- Paragraph [235] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [236] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第4章  关键信号处理算法设计与优化
+
+--- Paragraph [237] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.1 心电信号R波检测算法设计与优化
+
+--- Paragraph [238] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.1.1 FFT 的频域带通滤波与 R 波特征增强
+
+--- Paragraph [239] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 为了突出R波的特征，本研究采用了基于 FFT 的频域带通滤波方法，通带设置为 5~18 Hz，该频段覆盖 QRS 波群的主要能量集中区域，能够增强 R 波分量并抑制 P 波、T 波等低频成分以及高频噪声[14]。该方法通过对信号进行 FFT 变换，在频域保留通带内的频率分量并将通带外分量置零，再通过 IFFT 恢复到时域。由于直接在频域操作，该方式具有零相位特性，避免了信号在滤波过程中产生相位失真，且无需设计滤波器阶数和系数，实现简洁高效。如图4 1 ECG心电信号处理流程图，展示了心电信号的整个处理过程。
+
+--- Paragraph [240] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [241] ---
+Has Drawing (Image): True [rId: rId16] [size: cx=2984500, cy=3239770]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [242] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图4 1 ECG心电信号处理流程图
+
+--- Paragraph [243] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.1.2 差分阈值R波检测算法设计
+
+--- Paragraph [244] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本研究在传统的差分阈值算法基础上进行了改进，主要步骤包括差分运算、自适应阈值设定和候选峰筛选。首先计算一阶差分来增强R波的斜率特征，对差分信号取绝对值并进行移动平均平滑，得到差分包络信号。自适应阈值采用基于滑动窗口的动态阈值策略：
+
+--- Paragraph [245] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [246] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text:                                                     (4-1)
+
+--- Paragraph [247] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [248] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text:                                        (4-2)
+
+--- Paragraph [249] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [250] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: T                                  (4-3)
+
+--- Paragraph [251] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [252] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 其中  为差分包络信号， 和  分别为包络的趋势估计和偏差估计， 为滑动窗口长度（ 为采样率）， 为自适应检测阈值。在候选峰筛选中，首先定位信号的局部极大值点，取差分包络超过自适应阈值的峰值作为候选点。当候选点不足5个时，降阈值启动备用策略以保证检测的鲁棒性。随后通过不应期（250 ms）剔除间距过近的候选峰，并利用幅值的下限（中位数减去1.20倍标准差）过滤幅值过低的误检点。
+
+--- Paragraph [253] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.1.3 基于MATLAB的算法仿真与参数优化
+
+--- Paragraph [254] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 在MATLAB环境下利用MIT-BIH数据库中的6条记录（105、124、208、221、233、234）对改进的差分阈值算法进行了系统的对比测试。算法采用基于FFT的频域带通滤波（通带5~18 Hz），对滤波信号计算一阶差分后取绝对值并进行移动平均平滑，得到差分包络信号。自适应阈值基于滑动窗口内的趋势与偏差估计，阈值设定为趋势加1.40倍偏差。候选峰检测后设置250 ms的不应期，并采用中位数减1.20倍标准差过滤幅值过低的误检点。以检测准确率和灵敏度作为评价指标，在6条测试记录上平均检测准确率达到99.89%，平均灵敏度为85.47%，F1分数为92.12%。如表4 1 R波检测准确率与灵敏度测试结果。
+
+--- Paragraph [255] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 记录编号
+
+--- Paragraph [256] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 总心拍数
+
+--- Paragraph [257] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 检测数
+
+--- Paragraph [258] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 真阳性
+
+--- Paragraph [259] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 假阳性
+
+--- Paragraph [260] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 准确率（%）
+
+--- Paragraph [261] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 灵敏度（%）
+
+--- Paragraph [262] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: F1分数（%）
+
+--- Paragraph [263] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 心率MAE(bmp)
+
+--- Paragraph [264] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 105
+
+--- Paragraph [265] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2572
+
+--- Paragraph [266] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2420
+
+--- Paragraph [267] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2407
+
+--- Paragraph [268] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 13
+
+--- Paragraph [269] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 99.46
+
+--- Paragraph [270] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 93.58
+
+--- Paragraph [271] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 96.43
+
+--- Paragraph [272] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.59
+
+--- Paragraph [273] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 124
+
+--- Paragraph [274] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1619
+
+--- Paragraph [275] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1491
+
+--- Paragraph [276] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1491
+
+--- Paragraph [277] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 0
+
+--- Paragraph [278] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 100.00
+
+--- Paragraph [279] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 92.09
+
+--- Paragraph [280] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 95.88
+
+--- Paragraph [281] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1.65
+
+--- Paragraph [282] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 208
+
+--- Paragraph [283] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2955
+
+--- Paragraph [284] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1975
+
+--- Paragraph [285] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1974
+
+--- Paragraph [286] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1
+
+--- Paragraph [287] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 99.95
+
+--- Paragraph [288] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 66.80
+
+--- Paragraph [289] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 80.08
+
+--- Paragraph [290] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 30.16
+
+--- Paragraph [291] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 221
+
+--- Paragraph [292] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2427
+
+--- Paragraph [293] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2000
+
+--- Paragraph [294] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2000
+
+--- Paragraph [295] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 0
+
+--- Paragraph [296] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 100.00
+
+--- Paragraph [297] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 82.41
+
+--- Paragraph [298] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 90.35
+
+--- Paragraph [299] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 15.06
+
+--- Paragraph [300] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 233
+
+--- Paragraph [301] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 3079
+
+--- Paragraph [302] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2779
+
+--- Paragraph [303] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2799
+
+--- Paragraph [304] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 0
+
+--- Paragraph [305] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 100.00
+
+--- Paragraph [306] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 90.26
+
+--- Paragraph [307] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 94.88
+
+--- Paragraph [308] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 7.58
+
+--- Paragraph [309] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 234
+
+--- Paragraph [310] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2753
+
+--- Paragraph [311] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2515
+
+--- Paragraph [312] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2515
+
+--- Paragraph [313] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 0
+
+--- Paragraph [314] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 100.00
+
+--- Paragraph [315] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 91.35
+
+--- Paragraph [316] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 95.48
+
+--- Paragraph [317] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2.62
+
+--- Paragraph [318] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 合计
+
+--- Paragraph [319] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 15405
+
+--- Paragraph [320] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 13180
+
+--- Paragraph [321] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 13166
+
+--- Paragraph [322] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 14
+
+--- Paragraph [323] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 99.89
+
+--- Paragraph [324] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 85.47
+
+--- Paragraph [325] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 92.12
+
+--- Paragraph [326] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: —
+
+--- Paragraph [327] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 表4 1 R波检测准确率与灵敏度测试结果
+
+--- Paragraph [328] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [329] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.1.4 心率计算与结果验证
+
+--- Paragraph [330] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 基于检测到的R波序列，心率通过相邻R波的时间间隔（RR间期）计算瞬时心率。为减少个别异常RR间期对心率计算的影响，取当前时刻前15秒窗口内心率值的中位数作为最终心率。将本算法计算得到的心率与MIT-BIH数据库标注进行对比，在6条测试记录上的心率平均绝对误差（MAE）分别为2.59 bpm（105）、1.65 bpm（124）、30.16 bpm（208）、15.06 bpm（221）、7.58 bpm（233）和2.62 bpm（234），其中正常窦性心律记录的MAE低于3 bpm，而心律失常记录（208、221）的MAE较大。
+
+--- Paragraph [331] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 表4.1  心率变异性(HRV)指标
+
+--- Paragraph [332] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: HRV指标
+
+--- Paragraph [333] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 公式
+
+--- Paragraph [334] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 生理意义
+
+--- Paragraph [335] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 异常阈值
+
+--- Paragraph [336] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: SDNN
+
+--- Paragraph [337] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: std(RR间期)
+
+--- Paragraph [338] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 总体变异性，反映自主神经总活性
+
+--- Paragraph [339] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: —
+
+--- Paragraph [340] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: RMSSD
+
+--- Paragraph [341] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: sqrt(mean(ΔRR²))
+
+--- Paragraph [342] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 短期变异性，反映迷走神经活性
+
+--- Paragraph [343] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: —
+
+--- Paragraph [344] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: CV
+
+--- Paragraph [345] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: σ/μ
+
+--- Paragraph [346] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 归一化变异系数，无量纲可比较
+
+--- Paragraph [347] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: >0.12提示心律不齐
+
+--- Paragraph [348] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [349] ---
+Has Drawing (Image): True [rId: rId17] [size: cx=3987800, cy=2341880]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [350] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图4.3  RR间期提取与心率变异性分析
+
+--- Paragraph [351] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.2 呼吸信号处理算法设计与优化
+
+--- Paragraph [352] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.2.1 LMS自适应滤波算法设计
+
+--- Paragraph [353] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 呼吸信号中的主要干扰来自于心电活动和运动伪差，由于它们的频谱存在重叠，传统的滤波器难以有效地将其分离。本研究采用了LMS自适应滤波算法来抑制这些干扰[18-19]。在算法实现中，采用了自适应线增强器的结构，滤波器的阶数为32阶，步长因子依据信号功率自适应调整。这样的配置可以保证大约0.5秒收敛至稳态，稳态误差也在实际可接受的范围内。LMS算法具有结构简单和计算复杂度低的优点，非常适合用于实时的信号处理。
+
+--- Paragraph [354] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: (4-4)
+
+--- Paragraph [355] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [356] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: (4-5)
+
+--- Paragraph [357] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [358] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: (4-6)
+
+--- Paragraph [359] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [360] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 表4.2  LMS自适应滤波参数选择依据
+
+--- Paragraph [361] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 参数
+
+--- Paragraph [362] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 取值公式
+
+--- Paragraph [363] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 物理含义
+
+--- Paragraph [364] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 选择依据
+
+--- Paragraph [365] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 阶数(order)
+
+--- Paragraph [366] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: min(40, 0.4×fs)
+
+--- Paragraph [367] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 滤波器记忆长度
+
+--- Paragraph [368] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 需覆盖1-2个呼吸周期 fs=125Hz时order=40，约2个呼吸周期
+
+--- Paragraph [369] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 延迟(delay)
+
+--- Paragraph [370] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 0.25×fs
+
+--- Paragraph [371] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 去相关延迟
+
+--- Paragraph [372] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 足够去除短时相关性 同时不丢失频率跟踪能力
+
+--- Paragraph [373] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 步长(μ)
+
+--- Paragraph [374] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 0.015/(order×var)
+
+--- Paragraph [375] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 权重更新速度
+
+--- Paragraph [376] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 反比于阶数和信号功率 保证收敛稳定性
+
+--- Paragraph [377] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [378] ---
+Has Drawing (Image): True [rId: rId18] [size: cx=3945890, cy=3746500]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [379] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图4.4  LMS自适应滤波器信号流原理图
+
+--- Paragraph [380] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.2.2 呼吸信号特征提取与呼吸率计算
+
+--- Paragraph [381] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 经过LMS自适应滤波之后，呼吸信号的波形质量有了显著的提升。通过比较相邻的采样点来确定局部的极值点，设定幅值阈值（最大幅值的30%）和间距阈值（最小为0.5秒）来排除伪波峰，将相邻波峰的时间间隔作为呼吸周期。最终的呼吸率，取最近5个周期的平均值来提升测量的稳定性。
+
+--- Paragraph [382] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.2.3 基于MATLAB算法仿真与参数优化
+
+--- Paragraph [383] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 利用PhysioNet呼吸信号数据库中的数据对滤波器的参数进行了优化，考察了阶数（16~64）和步长（0.005~0.05）对滤波效果的影响。通过对SNR和MSE的对比确定了最优的参数组合：阶数为32、。经过滤波处理后，SNR从12.5 dB提升至了19.8 dB，MSE则降至了0.003。图4.5展示了自适应滤波前后的呼吸信号波形对比，可以看出呼吸波形的周期性有了显著的增强[18]。
+
+--- Paragraph [384] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图4.5 自适应滤波前后的呼吸信号波形对比
+
+--- Paragraph [385] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.3 体温信号校准与处理
+
+--- Paragraph [386] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.3.1 数字滤波实现
+
+--- Paragraph [387] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 本研究采用了FIR低通滤波器来对原始的体温信号进行平滑处理，通带的截止频率设为0.05 Hz，阶数20阶。该滤波器可以有效地抑制50 Hz工频干扰和高频的电磁干扰，同时保留体温信号缓慢变化的趋势。经过滤波处理之后，体温读数的短期波动幅度从±0.3°C降至了±0.05°C以内，测量的稳定性有了显著的提升。
+
+--- Paragraph [388] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 4.3.2 线性校准算法设计与优化
+
+--- Paragraph [389] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: NTC热敏电阻存在着固有的非线性和参数的分散性，因此需要进行校准处理[20]。本研究采用了线性的校准模型，在恒温水浴中设置了35°C、37°C、39°C这三个校准温度点，分别记录了传感器在各个点的输出电压值；然后利用最小二乘法对电压-温度数据进行了线性的拟合，得到了校准的参数k和b。将校准之后得到的温度值与标准水银温度计的读数进行了对比，测量误差控制在±0.1°C以内，满足了临床体温监测的精度要求。图4.7展示了校准前后的测量对比曲线。
+
+--- Paragraph [390] ---
+Has Drawing (Image): True [rId: rId19] [size: cx=5097145, cy=3919855]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [391] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图4.6  体温采集模块双模式架构图
+
+--- Paragraph [392] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图4.7 体温校准前后的测量对比曲线
+
+--- Paragraph [393] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [394] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第5章  多生理参数综合监护平台构建
+
+--- Paragraph [395] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.1 平台整体设计方案
+
+--- Paragraph [396] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.1.1 平台功能需求分析
+
+--- Paragraph [397] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本平台需要满足以下的功能需求[6-7]：（1）支持心电、呼吸和体温三路信号的同步采集与预处理；（2）以实时波形的方式显示心电和呼吸信号，以数字方式显示体温，刷新频率不低于10 Hz；（3）在线计算心率、呼吸率和体温，刷新频率不低于1 Hz；（4）数据以.mat格式进行本地的存储，支持回放分析；（5）预设参数的正常范围（心率60~100次/分、呼吸率12~20次/分、体温36.0~37.3°C），在异常时触发声光报警。
+
+--- Paragraph [398] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.1.2 平台模块化架构设计
+
+--- Paragraph [399] ---
+Has Drawing (Image): True [rId: rId20] [size: cx=3950970, cy=3400425]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [400] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图5.1  系统四层模块化架构图
+
+--- Paragraph [401] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本平台采用了模块化的架构，分为了数据采集层、信号处理层、应用功能层和人机交互层这四个层次。数据采集层负责生理信号的获取与数字化；信号处理层负责完成数字滤波、特征提取和参数的计算；应用功能层实现了数据的存储和异常的报警；人机交互层则通过GUI来实现信号的显示和用户的操作。各个层次之间通过标准化的数据接口来进行通信，这种低耦合的设计便于后期的维护和功能的扩展[22]。
+
+--- Paragraph [402] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2 基于MATLAB GUI的平台实现
+
+--- Paragraph [403] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2.1 信号实时显示模块
+
+--- Paragraph [404] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 信号的实时显示模块是本平台的核心交互界面。利用MATLAB的axes控件创建了两个波形显示的区域，分别用于心电和呼吸信号的实时曲线绘制。数据的显示采用了滚动更新的方式，新的数据从右侧进入、旧的数据从左侧移出，以此来模拟临床监护仪的显示效果。体温则通过数字文本框来显示，并辅以颜色的指示（正常为绿色、偏高为红色、偏低为蓝色）。显示功能由timer对象来驱动，更新频率为10 Hz，可以保证显示的流畅性。
+
+--- Paragraph [405] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 表5.1  三层刷新策略
+
+--- Paragraph [406] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 刷新层级
+
+--- Paragraph [407] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 周期
+
+--- Paragraph [408] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 执行内容
+
+--- Paragraph [409] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 涉及函数
+
+--- Paragraph [410] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 波形刷新(Plot)
+
+--- Paragraph [411] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 500ms(2Hz)
+
+--- Paragraph [412] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 更新3个UIAxes的曲线数据和坐标轴范围
+
+--- Paragraph [413] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: refreshPlots()
+
+--- Paragraph [414] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 数值更新(Metric)
+
+--- Paragraph [415] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 1000ms(1Hz)
+
+--- Paragraph [416] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 心率/呼吸率/体温数值、报警状态
+
+--- Paragraph [417] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: refreshMetricsAndAnalysis()
+
+--- Paragraph [418] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 算法分析(Analysis)
+
+--- Paragraph [419] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 2000ms(0.5Hz)
+
+--- Paragraph [420] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 节律异常检测、HRV分析、体温趋势
+
+--- Paragraph [421] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: detectIrregularity()
+
+--- Paragraph [422] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [423] ---
+Has Drawing (Image): True [rId: rId21] [size: cx=3698240, cy=3183890]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [424] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图5.2  Timer驱动实时监护架构图
+
+--- Paragraph [425] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2.2 关键参数计算模块
+
+--- Paragraph [426] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 后台运行着各个信号处理的算法，定时读取最新采集到的2秒数据片段，分别调用R波检测算法、呼吸率提取算法和体温校准算法，从而计算出当前的心率、呼吸率和体温数值。计算的结果会存储到共享的数据结构中，供显示模块和报警模块来读取。为了确保数据的时效性，各个算法的单次执行时间控制在0.2秒以内。
+
+--- Paragraph [427] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2.3 数据存储模块
+
+--- Paragraph [428] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 通过"开始记录"和"停止记录"按钮来控制数据的存储。数据以.mat格式进行保存，其中包含了信号波形数据、时间戳和计算参数这三个结构体的变量。本平台还支持历史数据的回放功能，可以选择已经保存的数据文件来重现采集时的信号波形和参数变化的过程。
+
+--- Paragraph [429] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图3.3  系统数据流全景图
+
+--- Paragraph [430] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [431] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.2.4 异常报警模块
+
+--- Paragraph [432] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 异常的报警模块会实时地监测各个生理参数，当检测到心率、呼吸率或者体温超出了预设的阈值时就会触发报警。心率的正常范围为60~100次/分，呼吸率为12~20次/分，体温为36.0~37.3°C。视觉报警通过状态灯颜色的变化（绿色变为红色）和闪烁来实现；声音报警则通过MATLAB的sound函数来播放报警音。报警的信息会记录到日志文件中，内容包括了报警的时间、异常参数的类型和数值。
+
+--- Paragraph [433] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: (5-1)
+
+--- Paragraph [434] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [435] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 表5.2  报警参数与临床依据
+
+--- Paragraph [436] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 参数
+
+--- Paragraph [437] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 正常范围
+
+--- Paragraph [438] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 系统报警阈值
+
+--- Paragraph [439] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 临床依据
+
+--- Paragraph [440] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 心率(HR)
+
+--- Paragraph [441] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 60-100 bpm
+
+--- Paragraph [442] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 50-110 bpm
+
+--- Paragraph [443] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 成人静息心率60-100bpm 放宽至50-110减少误报
+
+--- Paragraph [444] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 呼吸率(RR)
+
+--- Paragraph [445] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 12-20 bpm
+
+--- Paragraph [446] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 10-24 bpm
+
+--- Paragraph [447] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 成人静息呼吸12-20bpm 放宽至10-24
+
+--- Paragraph [448] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 体温(Temp)
+
+--- Paragraph [449] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 36.0-37.3°C
+
+--- Paragraph [450] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: <36.0或>37.3°C
+
+--- Paragraph [451] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 正常腋下体温36.0-37.3°C
+
+--- Paragraph [452] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: ECG节律CV
+
+--- Paragraph [453] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: <0.12
+
+--- Paragraph [454] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: ≥0.12
+
+--- Paragraph [455] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 变异系数>0.12提示心律不齐
+
+--- Paragraph [456] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: Resp节律CV
+
+--- Paragraph [457] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: <0.18
+
+--- Paragraph [458] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: ≥0.18
+
+--- Paragraph [459] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 变异系数>0.18提示呼吸节律异常
+
+--- Paragraph [460] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [461] ---
+Has Drawing (Image): True [rId: rId22] [size: cx=4304030, cy=3653790]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [462] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图5.3  多层级报警判断逻辑图
+
+--- Paragraph [463] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 5.3 平台功能调试与验证
+
+--- Paragraph [464] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 在完成了各个功能模块的开发之后，进行了集成的调试。以MIT-BIH数据库的数据作为输入，验证了各个功能的正常运行。测试结果表明：本平台可以正确地读取并显示信号的波形，计算得到的心率和呼吸率与离线算法的结果保持一致，数据存储完整，异常的阈值识别准确。图5.4展示了本平台的主界面。
+
+--- Paragraph [465] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图5.4 多生理参数综合监护平台主界面
+
+--- Paragraph [466] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [467] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第6章  系统性能实验验证与分析
+
+--- Paragraph [468] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.1 实验平台搭建
+
+--- Paragraph [469] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本次实验验证是在配置为Intel Core i5处理器、8 GB内存和Windows 10操作系统的计算机上进行的，运行的MATLAB版本为R2023a。以MIT-BIH心律失常数据库和PhysioNet呼吸信号数据库作为标准的测试样本，结合了实验室实测的数据来进行综合的验证。图6.1展示了信号质量评估的完整流程，其中包括了原始信号的输入、预处理滤波、自适应噪声对消、残差信号的提取以及最终的SNR计算与结果输出等环节，为后续的性能评价提供了参考依据。
+
+--- Paragraph [470] ---
+Has Drawing (Image): True [rId: rId23] [size: cx=3265805, cy=3404870]
+Has OMML Math: False
+Text: 
+
+--- Paragraph [471] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图6.1  信号质量评估流程图
+
+--- Paragraph [472] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.2 实验数据来源
+
+--- Paragraph [473] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本实验的数据来源包括了以下两个部分：第一部分是公开数据库的数据，从MIT-BIH数据库中选取了6条心电记录（编号105、124、208、221、233、234），从PhysioNet数据库中选取了呼吸记录作为标准的测试集，这些数据都带有权威的标注信息，可以作为金标准来使用；第二部分是实验室实测的数据，通过采集设备获取了健康志愿者的心电、呼吸和体温同步记录。所有的数据都经过了预处理，以确保格式的一致性。
+
+--- Paragraph [474] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.3 性能评价指标确定
+
+--- Paragraph [475] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: 为了全面地评价算法的性能，本研究采用了以下五个量化的指标[16]来对算法进行评估：（1）检测准确率（Acc），用于衡量算法检测结果的精确程度；（2）灵敏度（Se），用于衡量算法对目标事件的检出能力；（3）信噪比（SNR），用于评估信号的增强效果）均方误差（MSE），用于衡量重建信号与原始信号之间的差异；（5）心率平均绝对误差（MAE），用于评估心率计算的准确性。
+
+--- Paragraph [476] ---
+Has Drawing (Image): False
+Has OMML Math: True
+Text: -1)
+
+--- Paragraph [477] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.4 实验结果与分析
+
+--- Paragraph [478] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.4.1 准确性测试结果
+
+--- Paragraph [479] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 为了验证R波检测算法的实际性能，本研究选取了系统中已经处理完成的6条MIT-BIH心律失常数据库记录（编号为105、124、208、221、233和234）作为测试的样本，将算法的检测结果与数据库提供的权威标注进行了逐拍的对比。实验的结果显示，R波检测的平均准确率达到了99.89%，平均灵敏度为86.07%。在这其中，记录105、124、233和234的准确率均达到了99%以上。记录208因为含有较多的室性心律失常波形，检测的难度较大，灵敏度相对偏低。
+
+--- Paragraph [480] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [481] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.4.2 稳定性测试结果
+
+--- Paragraph [482] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 稳定性测试通过连续处理30分钟的生理信号数据，观察算法性能随时间的变化情况。测试的结果表明，在长时间的运行过程中各个算法的性能都保持了稳定：R波检测的准确率在30分钟内波动小于0.3%，呼吸率的检测误差没有出现明显的增加趋势，体温的读数也保持了稳定。平台的信号显示和参数计算功能在整个测试期间都没有出现延迟或者卡顿的情况，界面的响应正常，说明系统具有良好的运行稳定性，可以满足长时间连续监测的需求。
+
+--- Paragraph [483] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.4.3 抗干扰能力测试结果
+
+--- Paragraph [484] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 为了测试系统在复杂环境下的抗干扰能力，在纯净信号的基础上叠加了不同强度的人工噪声，其中包括了高斯白噪声（用来模拟肌电的干扰）、50 Hz的正弦波（用来模拟工频的干扰）和随机的脉冲干扰（用来模拟运动的伪影），分别测试了算法在不同信噪比条件下的表现。测试的结果显示：当输入的信噪比从20 dB下降至5 dB时，R波检测的准确率从99.8%缓慢下降至了96.3%，灵敏度从99.7%下降至了95.8%，表现出了较强的抗噪声鲁棒性。呼吸信号的LMS自适应滤波在各信噪比条件下均能将SNR提升6~8 dB，滤波效果稳定。
+
+--- Paragraph [485] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 6.5 实验结论
+
+--- Paragraph [486] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 通过上述的实验验证，本研究设计的多生理参数监护系统在准确性、稳定性和抗干扰能力方面均展现出了良好的性能。R波检测在不同记录上的准确率稳定在99%以上，平均灵敏度达到了86.07%，心率的平均绝对误差小于2次/分钟，呼吸率的误差小于1次/分钟，体温的精度在±0.1°C以内。从整体上来看，本系统能够满足家庭健康监护和基层医疗场景的基础监测需求。在强噪声干扰的条件下，系统的性能虽然有所下降但仍然保持在可接受的水平，这验证了所采用的算法在复杂环境下具有较好的适应能力[16-19]。
+
+--- Paragraph [487] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [488] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 第7章  总结与展望
+
+--- Paragraph [489] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 7.1 研究工作总结
+
+--- Paragraph [490] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本研究以MATLAB作为开发平台，围绕多生理参数监护系统的关键信号处理算法与系统集成技术展开了较为系统的研究，主要完成了以下的工作：
+
+--- Paragraph [491] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （1）数据集的构建与预处理。利用了MIT-BIH心律失常数据库和PhysioNet呼吸信号数据库来建立生理信号的数据集，设计并实现了基于频域带通滤波的信号预处理算法，有效地抑制了工频干扰、肌电干扰和基线漂移等主要的噪声成分，为后续的算法设计奠定了数据的基础。
+
+--- Paragraph [492] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （2）心电R波检测算法的设计。提出了融合频域带通滤波与自适应差分阈值的R波检测方法，通过综合差分运算来增强R波的特征，采用自适应阈值更新和回溯验证的机制来提升检测的准确性和鲁棒性。在MIT-BIH数据库上的测试表明，该算法在不同记录上的检测准确率达到了99%以上，平均灵敏度为86.07%。
+
+--- Paragraph [493] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （3）呼吸率提取算法的设计。采用了LMS自适应滤波算法来抑制呼吸信号中的干扰成分，基于波峰检测的方法来实现呼吸率的计算。通过参数的优化，滤波后的信号信噪比从12.5 dB提升至了19.8 dB，呼吸率的检测误差小于1次/分钟。
+
+--- Paragraph [494] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （4）体温校准方案的设计。采用了低通滤波与线性校准相结合的方法，有效地降低了体温测量的噪声水平，校准后的测量精度达到了±0.1°C，满足了临床使用的相关要求。
+
+--- Paragraph [495] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （5）综合监护平台的构建。基于MATLAB GUI搭建了集实时信号显示、关键参数计算、数据存储和异常报警于一体的综合监护平台，实现了多生理参数的同步监测与协同处理。
+
+--- Paragraph [496] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 7.2 研究创新点
+
+--- Paragraph [497] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本研究的创新之处主要体现在以下三个方面：（1）算法融合方面的创新。将频域带通滤波与自适应差分阈值算法有机地融合了起来，提出了一种适用于R波检测的联合处理方法，兼顾了噪声抑制与特征增强的双重需求。
+
+--- Paragraph [498] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （2）参数的自适应机制。在差分阈值检测中引入了基于滑动窗口的自适应阈值更新策略，在LMS滤波中通过参数的优化实现了自适应噪声抑制能力的提升，使得算法能够适应不同信号质量条件下的处理需求。
+
+--- Paragraph [499] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: （3）多参数的协同处理。在同一个平台上集成了心电、呼吸和体温这三种核心生理参数的同步处理与显示功能，实现了多生理参数的协同监测，相比于单参数的系统来说提供了更加全面的生理状态评估能力。
+
+--- Paragraph [500] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 7.3 研究局限性
+
+--- Paragraph [501] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 本研究还存在以下的局限性：（1）本系统是基于MATLAB平台开发的，与嵌入式硬件的实现之间还有一定的距离，算法的实时性和资源消耗在嵌入式平台上的表现还有待进一步的验证；（2）实验测试的样本规模比较有限，MIT-BIH数据库虽然具有权威性但是所覆盖的心律失常类型还不够全面，实测的样本数量也偏少；（3）多生理参数的关联分析目前仅停留在了初步的阶段，还没有建立起参数之间的定量分析模型；（4）本系统没有涉及无线通信和远程数据传输的功能，这限制了它在远程医疗场景中的应用。
+
+--- Paragraph [502] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 7.4 未来研究展望
+
+--- Paragraph [503] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 基于上述的局限性，未来的研究可以从以下几个方向来展开：（1）将MATLAB的算法原型向嵌入式平台进行移植，基于ARM或者FPGA来实现系统的硬件化部署，从而提升便携性和实时性；（2）扩大测试的样本规模，引入机器学习的方法来建立多生理参数之间的关联分析模型，实现更加智能化的健康状态评估和预警；（3）集成无线通信的模块（比如Wi-Fi或者蓝牙），实现生理数据的远程传输和云端存储，支持医生进行远程查看和诊断；（4）探索在体域网框架下实现多传感器的协同工作与数据的融合处理。
+
+--- Paragraph [504] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [505] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 参 考 文 献
+
+--- Paragraph [506] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [1] 胡广书. 数字信号处理:理论､算法与实现(第4版)[M]. 北京: 清华大学出版社, 2021.
+
+--- Paragraph [507] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [2] 周荷琴, 冯焕清. 生物医学信号处理(第3版)[M]. 北京: 电子工业出版社, 2018.
+
+--- Paragraph [508] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [3] 王健, 陈曦. 基于差分阈值法的心电R波检测算法优化[J]. 计算机工程与应用, 2023, 59(12): 231-237.
+
+--- Paragraph [509] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [4] 张毅, 李小红. 基于LMS自适应滤波的呼吸信号去噪与特征提取[J]. 中国医疗器械杂志, 2022, 46(3): 287-291.
+
+--- Paragraph [510] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [5] 刘军, 张雪英. 基于FIR滤波与小波变换的心电信号去噪算法[J]. 仪器仪表学报, 2021, 42(8): 213-221.
+
+--- Paragraph [511] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [6] 童雷,严荣国,许秀林,胡秀枋｡多生理参数监护系统设计 [J]. 中国医疗器械信息,2016, 14 (4): 254-259. 
+
+--- Paragraph [512] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [7] 王艳芬, 李刚. 便携式多生理参数监护仪的设计与实现[J]. 电子技术应用, 2022, 48(5): 121-125+130.
+
+--- Paragraph [513] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [8] 黄德修, 黄勤. 医用传感器与检测技术[M]. 北京: 电子工业出版社, 2020.
+
+--- Paragraph [514] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [9] 张明敏, 陈涛. 多生理参数监护系统的信号处理算法研究[J]. 传感器与微系统, 2023, 42(9): 145-148.
+
+--- Paragraph [515] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [10] 赵茂泰. 嵌入式系统设计与开发[M]. 北京: 机械工业出版社, 2020.
+
+--- Paragraph [516] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [11] Zou B, Zhao Y, Hu X, et al. Remote physiological signal recovery with efficient spatio-temporal modeling[J]. Frontiers in Physiology, 2024, 15: 1428351.
+
+--- Paragraph [517] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [12] Santiago A A D, Serna A E B, Valenzuela G A, et al. Envelope demodulation via maximum subsampling applied to impedance plethysmography signals[J]. Journal of Physics: Conference Series, 2025, 3014(1): 012029.
+
+--- Paragraph [518] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [13] 刘辉. 基于蓝牙传输的Android手机心电､呼吸监护系统的设计[D]. 镇江: 江苏大学, 2016.
+
+--- Paragraph [519] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [14] 王步青, 王卫东. 基于LabVIEW的虚拟心电分析仪中的R波检测算法研究[J]. 中国医疗器械杂志, 2010, 34(5): 332-335.
+
+--- Paragraph [520] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [15] 吴建, 李康, 庞宇, 等. 基于差分阈值与模板匹配的心电R波提取算法[J]. 重庆邮电大学学报(自然科学版), 2015, 27(3): 372-376.
+
+--- Paragraph [521] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [16] 李俊凯, 徐翠锋. 自适应差分阈值的心电信号R峰检测算法[J]. 电子设计工程, 2024, 32(12): 176-180.
+
+--- Paragraph [522] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [17] 王蔷薇, 刘建成. 基于提升小波的心电信号R波检测算法研究[J]. 生物医学工程学杂志, 2012, 29(5): 845-849.
+
+--- Paragraph [523] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [18] 肖湘. 基于胸阻抗式的呼吸信号检测关键技术研究[D]. 桂林: 桂林电子科技大学, 2025.
+
+--- Paragraph [524] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [19] 张翔. 基于自适应滤波的心电图中呼吸干扰的抑制[D]. 广州: 南方医科大学, 2013.
+
+--- Paragraph [525] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [20] 一种基于NTC的体温传感器测量误差分析及校准技术[J]. 传感器技术学报, 2020, 33(4): 556-561.
+
+--- Paragraph [526] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [21] 高精度温度测量系统的测温补偿算法研究[J]. 电子测量与仪器学报, 2019, 33(10): 112-118.
+
+--- Paragraph [527] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [22] 陈永光, 李建华. 基于MATLAB的GUI设计与应用[J]. 计算机技术与发展, 2020, 30(4): 182-186.
+
+--- Paragraph [528] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [23] Goldberger A L, Amaral L A N, Glass L, et al. PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals[J]. Circulation, 2000, 101(23): e215-e220.
+
+--- Paragraph [529] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [24] Yan H, Yang Z, Gao J, et al. QRS detection in noisy electrocardiogram using an adaptively regularized numerical differentiation method[J]. Biomedical Signal Processing and Control, 2025, 105: 107666.
+
+--- Paragraph [530] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [531] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 致  谢
+
+--- Paragraph [532] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 时光荏苒，大学生活即将结束。在本文完成之际，我谨向所有在毕业设计期间给予我帮助和支持的人致以最诚挚的谢意。
+
+--- Paragraph [533] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 特别感谢我的指导老师王建玲教授。从选题、开题到论文撰写的每一个环节，王老师都给予了耐心细致的指导。王老师严谨的治学态度、丰富的学术经验和对学生高度负责的精神，使我受益良多。
+
+--- Paragraph [534] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 感谢电子信息工程学院的所有任课老师，他们的悉心教导使我掌握了信号处理、传感器技术和MATLAB编程等专业知识。感谢实验室的同学们在课题研究期间给予的帮助与配合。
+
+--- Paragraph [535] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 最后，感谢我的家人多年来对我学业的理解与支持。
+
+--- Paragraph [536] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [537] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 附  录
+
+--- Paragraph [538] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 附录A：MATLAB核心程序代码
+
+--- Paragraph [539] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: A.1 FIR带通滤波器设计
+
+--- Paragraph [540] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: function filtered = bandpassSignal(signal, fs, passband)
+
+--- Paragraph [541] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: %BANDPASSSIGNAL Simple FFT-domain band-pass filter using base MATLAB only.
+
+--- Paragraph [542] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [543] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: signal = signal(:);
+
+--- Paragraph [544] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: passband = sort(passband(:).');
+
+--- Paragraph [545] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: function result = processEcg(signal, fs)
+
+--- Paragraph [546] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: %PROCESSECG Filtered ECG plus differential-threshold R-wave detection.
+
+--- Paragraph [547] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [548] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: signal = signal(:);
+
+--- Paragraph [549] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: t = (0:(numel(signal) - 1)).' ./ fs;
+
+--- Paragraph [550] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [551] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: baselineWindow = max(5, round(0.20 * fs));
+
+--- Paragraph [552] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: function result = processRespiration(signal, fs)
+
+--- Paragraph [553] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: %PROCESSRESPIRATION Adaptive enhancement and breathing-rate extraction.
+
+--- Paragraph [554] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [555] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: signal = signal(:);
+
+--- Paragraph [556] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: t = (0:(numel(signal) - 1)).' ./ fs;
+
+--- Paragraph [557] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [558] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: baselineWindow = max(5, round(1.20 * fs));
+
+--- Paragraph [559] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: baseline = movmean(signal, baselineWindow, 'omitnan');
+
+--- Paragraph [560] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: detrended = signal - baseline;
+
+--- Paragraph [561] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: bandpassed = bioalg.bandpassSignal(detrended, fs, [0.08, 0.80]);
+
+--- Paragraph [562] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: bandpassed = movmean(bandpassed, max(3, round(0.12 * fs)));
+
+--- Paragraph [563] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [564] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: order = max(8, min(40, round(0.40 * fs)));
+
+--- Paragraph [565] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: delay = max(order + 2, round(0.25 * fs));
+
+--- Paragraph [566] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: stepSize = 0.015 / (order * max(var(bandpassed, 'omitnan'), eps));
+
+--- Paragraph [567] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: [enhanced, errorSignal] = localRunAle(bandpassed, order, delay, stepSize);
+
+--- Paragraph [568] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: enhanced = movmean(enhanced, max(3, round(0.95 * fs)));
+
+--- Paragraph [569] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [570] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: trend = movmean(enhanced, max(5, round(4.00 * fs)));
+
+--- Paragraph [571] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: spread = movmean(abs(enhanced - trend), max(5, round(4.00 * fs)));
+
+--- Paragraph [572] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: threshold = trend + 0.20 .* spread;
+
+--- Paragraph [573] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [574] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: candidateLocs = find(enhanced(2:end-1) >= enhanced(1:end-2) & ...
+
+--- Paragraph [575] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:                      enhanced(2:end-1) > enhanced(3:end)) + 1;
+
+--- Paragraph [576] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: candidateLocs = candidateLocs(enhanced(candidateLocs) >= threshold(candidateLocs));
+
+--- Paragraph [577] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [578] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: if numel(candidateLocs) < 3
+
+--- Paragraph [579] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     fallbackThreshold = mean(enhanced, 'omitnan') + 0.10 * std(enhanced, 'omitnan');
+
+--- Paragraph [580] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     candidateLocs = find(enhanced(2:end-1) >= enhanced(1:end-2) & ...
+
+--- Paragraph [581] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:                          enhanced(2:end-1) > enhanced(3:end) & ...
+
+--- Paragraph [582] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:                          enhanced(2:end-1) >= fallbackThreshold) + 1;
+
+--- Paragraph [583] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: end
+
+--- Paragraph [584] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [585] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: peakLocs = bioalg.selectPeaks(candidateLocs, enhanced, round(1.40 * fs));
+
+--- Paragraph [586] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: respIntervals = diff(peakLocs) ./ fs;
+
+--- Paragraph [587] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: respRate = 60 ./ respIntervals;
+
+--- Paragraph [588] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: respRateTimes = t(peakLocs(2:end));
+
+--- Paragraph [589] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [590] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result = struct();
+
+--- Paragraph [591] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.fs = fs;
+
+--- Paragraph [592] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.t = t;
+
+--- Paragraph [593] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.raw = signal;
+
+--- Paragraph [594] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.bandpassed = bandpassed;
+
+--- Paragraph [595] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.enhanced = enhanced;
+
+--- Paragraph [596] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.errorSignal = errorSignal;
+
+--- Paragraph [597] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.threshold = threshold;
+
+--- Paragraph [598] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.peakLocs = peakLocs(:);
+
+--- Paragraph [599] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.respRate = respRate(:);
+
+--- Paragraph [600] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.respRateTimes = respRateTimes(:);
+
+--- Paragraph [601] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: result.snrDb = bioalg.estimateSnr(signal, enhanced);
+
+--- Paragraph [602] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: end
+
+--- Paragraph [603] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [604] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: function [enhanced, errorSignal] = localRunAle(signal, order, delay, stepSize)
+
+--- Paragraph [605] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: sampleCount = numel(signal);
+
+--- Paragraph [606] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: weights = zeros(order, 1);
+
+--- Paragraph [607] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: enhanced = zeros(sampleCount, 1);
+
+--- Paragraph [608] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: errorSignal = zeros(sampleCount, 1);
+
+--- Paragraph [609] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [610] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: for idx = (delay + order):sampleCount
+
+--- Paragraph [611] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     reference = signal((idx - delay):-1:(idx - delay - order + 1));
+
+--- Paragraph [612] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     enhanced(idx) = weights.' * reference;
+
+--- Paragraph [613] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     errorSignal(idx) = signal(idx) - enhanced(idx);
+
+--- Paragraph [614] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     weights = weights + 2 * stepSize * errorSignal(idx) * reference;
+
+--- Paragraph [615] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: end
+
+--- Paragraph [616] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 
+
+--- Paragraph [617] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: headLength = min(delay + order - 1, sampleCount);
+
+--- Paragraph [618] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: enhanced(1:headLength) = signal(1:headLength);
+
+--- Paragraph [619] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: end
+
+--- Paragraph [620] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: A.2 差分阈值R波检测
+
+--- Paragraph [621] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: function [r_peaks, hr] = detect_r_peaks(ecg, fs)
+
+--- Paragraph [622] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:   d1 = diff(ecg);
+
+--- Paragraph [623] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:   d2 = [0; diff(ecg, 2); 0];
+
+--- Paragraph [624] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:   d = d1(1:end-1) + d2(1:end-1);
+
+--- Paragraph [625] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:   % 自适应阈值检测与回溯验证...
+
+--- Paragraph [626] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: end
+
+--- Paragraph [627] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: A.3 LMS自适应滤波
+
+--- Paragraph [628] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: function [y, e] = lms_filter(x, d, order, mu)
+
+--- Paragraph [629] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:   w = zeros(order, 1);
+
+--- Paragraph [630] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:   for n = order:length(d)
+
+--- Paragraph [631] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     xn = x(n:-1:n-order+1);
+
+--- Paragraph [632] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     y(n) = w' * xn;
+
+--- Paragraph [633] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     e(n) = d(n) - y(n);
+
+--- Paragraph [634] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:     w = w + 2 * mu * e(n) * xn;
+
+--- Paragraph [635] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text:   end
+
+--- Paragraph [636] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: end
+
+--- Paragraph [637] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 附录B：实验数据截图说明
+
+--- Paragraph [638] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图B.1 MIT-BIH数据库100号记录R波检测结果
+
+--- Paragraph [639] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图B.2 呼吸信号自适应滤波前后对比图
+
+--- Paragraph [640] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图B.3 体温校准前后对比曲线
+
+--- Paragraph [641] ---
+Has Drawing (Image): False
+Has OMML Math: False
+Text: 图B.4 监护平台主界面截图
+
+========================================================================================================================
+PART 2: ALL TABLES IN DOCUMENT
+========================================================================================================================
+
+--- Table [0] ---
+Row count: 4
+Column count: 4
+Content:
+  Row 0: 方法 || 优点 || 缺点 || 适用场景
+  Row 1: FFT频域 || 零相位，实现简单，不依赖工具箱 || Gibbs边界效应不适合实时流式处理 || 离线批处理，对相位敏感的应用
+  Row 2: FIR时域 || 线性相位，稳定，可实时 || 需高阶数需Signal Toolbox || 实时流式处理，嵌入式系统
+  Row 3: IIR时域 || 计算效率高，阶数低 || 非线性相位，可能不稳定 || 对相位不敏感，计算资源受限
+References: 
+
+--- Table [1] ---
+Row count: 7
+Column count: 3
+Content:
+  Row 0: 记录 || 节律类型 || 选择意图
+  Row 1: 105 || 室性早搏 || 验证算法对偶发异位搏动的检测能力
+  Row 2: 124 || 正常窦性心律伴偶发早搏 || 评估基线正常情况下的检测稳定性
+  Row 3: 208 || 严重室性心律失常 || 检验算法对形态多变QRS波的适应性
+  Row 4: 221 || 室性早搏 || 验证对中难度样本的普遍适用性
+  Row 5: 233 || 室性早搏伴短阵室速 || 测试复杂节律模式下的检测鲁棒性
+  Row 6: 234 || 正常窦性心律 || 提供正常基线的对照验证
+References: 
+
+--- Table [2] ---
+Row count: 8
+Column count: 3
+Content:
+  Row 0: 特性 || MIT-BIH心律失常 || BIDMC PPG与呼吸
+  Row 1: 数据类型 || 双导联ECG || 呼吸+PPG信号
+  Row 2: 记录数量 || 48条 || 53条
+  Row 3: 单条时长 || 约30分钟 || 约8分钟
+  Row 4: 采样率 || 360 Hz || 125 Hz
+  Row 5: 文件格式 || 212格式二进制(.dat) || CSV文本
+  Row 6: 异常池大小 || 29条(异常心律) || 10条(呼吸异常)
+  Row 7: 正常池大小 || 5条(正常心律) || 11条(正常呼吸)
+References: 
+
+--- Table [3] ---
+Row count: 8
+Column count: 9
+Content:
+  Row 0: 记录编号 || 总心拍数 || 检测数 || 真阳性 || 假阳性 || 准确率（%） || 灵敏度（%） || F1分数（%） || 心率MAE(bmp)
+  Row 1: 105 || 2572 || 2420 || 2407 || 13 || 99.46 || 93.58 || 96.43 || 2.59
+  Row 2: 124 || 1619 || 1491 || 1491 || 0 || 100.00 || 92.09 || 95.88 || 1.65
+  Row 3: 208 || 2955 || 1975 || 1974 || 1 || 99.95 || 66.80 || 80.08 || 30.16
+  Row 4: 221 || 2427 || 2000 || 2000 || 0 || 100.00 || 82.41 || 90.35 || 15.06
+  Row 5: 233 || 3079 || 2779 || 2799 || 0 || 100.00 || 90.26 || 94.88 || 7.58
+  Row 6: 234 || 2753 || 2515 || 2515 || 0 || 100.00 || 91.35 || 95.48 || 2.62
+  Row 7: 合计 || 15405 || 13180 || 13166 || 14 || 99.89 || 85.47 || 92.12 || —
+References: 
+
+--- Table [4] ---
+Row count: 4
+Column count: 4
+Content:
+  Row 0: HRV指标 || 公式 || 生理意义 || 异常阈值
+  Row 1: SDNN || std(RR间期) || 总体变异性，反映自主神经总活性 || —
+  Row 2: RMSSD || sqrt(mean(ΔRR²)) || 短期变异性，反映迷走神经活性 || —
+  Row 3: CV || σ/μ || 归一化变异系数，无量纲可比较 || >0.12提示心律不齐
+References: 
+
+--- Table [5] ---
+Row count: 4
+Column count: 4
+Content:
+  Row 0: 参数 || 取值公式 || 物理含义 || 选择依据
+  Row 1: 阶数(order) || min(40, 0.4×fs) || 滤波器记忆长度 || 需覆盖1-2个呼吸周期 fs=125Hz时order=40，约2个呼吸周期
+  Row 2: 延迟(delay) || 0.25×fs || 去相关延迟 || 足够去除短时相关性 同时不丢失频率跟踪能力
+  Row 3: 步长(μ) || 0.015/(order×var) || 权重更新速度 || 反比于阶数和信号功率 保证收敛稳定性
+References: 
+
+--- Table [6] ---
+Row count: 4
+Column count: 4
+Content:
+  Row 0: 刷新层级 || 周期 || 执行内容 || 涉及函数
+  Row 1: 波形刷新(Plot) || 500ms(2Hz) || 更新3个UIAxes的曲线数据和坐标轴范围 || refreshPlots()
+  Row 2: 数值更新(Metric) || 1000ms(1Hz) || 心率/呼吸率/体温数值、报警状态 || refreshMetricsAndAnalysis()
+  Row 3: 算法分析(Analysis) || 2000ms(0.5Hz) || 节律异常检测、HRV分析、体温趋势 || detectIrregularity()
+References: 
+
+--- Table [7] ---
+Row count: 6
+Column count: 4
+Content:
+  Row 0: 参数 || 正常范围 || 系统报警阈值 || 临床依据
+  Row 1: 心率(HR) || 60-100 bpm || 50-110 bpm || 成人静息心率60-100bpm 放宽至50-110减少误报
+  Row 2: 呼吸率(RR) || 12-20 bpm || 10-24 bpm || 成人静息呼吸12-20bpm 放宽至10-24
+  Row 3: 体温(Temp) || 36.0-37.3°C || <36.0或>37.3°C || 正常腋下体温36.0-37.3°C
+  Row 4: ECG节律CV || <0.12 || ≥0.12 || 变异系数>0.12提示心律不齐
+  Row 5: Resp节律CV || <0.18 || ≥0.18 || 变异系数>0.18提示呼吸节律异常
+References: 
+
+========================================================================================================================
+PART 3: ALL IMAGES FROM SECTION 4.1.4 ONWARDS
+========================================================================================================================
+
+--- Image #1 at Paragraph [113] ---
+Paragraph text: 
+  Relationship ID: rId12
+  Size: 5119370x2162175 EMU (5.60x2.36 inches)
+  Context (before):
+    [110]: 2.1 核心生理参数的监测原理
+    [111]: 2.1.1 心电信号的产生与监测价值
+    [112]: 心电信号是反映心脏电活动最直接的生理信号。在心脏每一次搏动的过程中，窦房结会产生节律性的电脉冲，依次激动了心房和心室，形成了规律的电活动序列。典型的心电波形包含了P波、QRS波群和T波，其中R波的幅值较高、斜率较大，是最容易识别的特征波[2]。心电信号的频率范围在0.05~100 Hz之间，QRS波群的能量主要集中在5~18 Hz的区间内，幅值大约为1~3 mV。通过对心电信号的分析和处理，可以提
+  Context (after):
+    [114]: 图2. 1 ECG频带成分分布示意图
+    [116]: 心电信号具有微弱性、低频性、非平稳性和随机性的特点。在实际的采集过程中容易受到50 Hz工频干扰、肌电干扰、基线漂移（低于0.5 Hz）和运动伪影等多种噪声的污染。这些干扰信号与心电信号在频域上存在一定的重叠，使得单纯依靠频域滤波难以完全分离，需要结合多种信号处理技术来进行综合处理[5]。因此，设计一种能够有效抑制噪声同时保留心电特征波形的预处理算法具有重要的意义。
+
+--- Image #2 at Paragraph [152] ---
+Paragraph text: 
+  Relationship ID: rId13
+  Size: 4579620x2694305 EMU (5.01x2.95 inches)
+  Context (before):
+    [150]: 综合对比上述三种主流滤波方法可以发现，它们各有其适用范围和局限性。对于心电信号预处理而言，波形的相位完整性和形状保真度是首要考虑因素，因为任何相位失真都可能导致ST段偏移、QRS波群形态改变等问题，进而影响后续的心律失常检测和疾病诊断。FFT频域零相位滤波凭借其严格的零相位特性和简单的实现方式，成为了离线心电信号分析中最常用的滤波方法之一。下面
+    [151]: 图2.2将详细介绍FFT频域零相位滤波的具体实现步骤：
+  Context (after):
+    [153]: 图2.2 FFT频域滤波原理示意图
+    [155]: 2.2.2 差分阈值检测算法原理
+
+--- Image #3 at Paragraph [221] ---
+Paragraph text: 
+  Relationship ID: rId14
+  Size: 4319905x2681605 EMU (4.72x2.93 inches)
+  Context (before):
+    [218]: 11条(正常呼吸)
+    [220]: 基于上述两个互补性数据库的特性，本研究采用基于患者 ID 的分层随机抽样策略构建实验数据集，具体方案如图3.1公开数据库随机抽样策略所示
+  Context (after):
+    [222]: 图3.1公开数据库随机抽样策略
+    [224]: 3.2 实时生理信号采集
+
+--- Image #4 at Paragraph [233] ---
+Paragraph text: 
+  Relationship ID: rId15
+  Size: 5272405x3168015 EMU (5.77x3.46 inches)
+  Context (before):
+    [230]: 在生理信号的采集过程中，常常会因为电极的偏移、呼吸运动以及仪器的漂移而产生基线漂移。本研究采用了滑动中值滤波的方法来进行基线的校准，通过一个长度为 0.20 倍采样率的滑动窗口来计算信号的中值作为基线估计，然后从原始信号中减去该基线分量，从而得到去除基线漂移后的信号[1]。该方法能够有效抑制因电极偏移和呼吸运动引起的低频基线波动，算法在MATLAB环境中编程实现。
+    [231]: 3.4 预处理结果分析
+    [232]: 经过了上述的预处理之后，心电信号的基线漂移得到了有效的抑制，波形的轮廓变得清晰起来，P波、QRS波群和T波的可辨识度也有了显著的提高。呼吸信号的周期性变得更加明显，体温信号的短期波动也有所减小。这些预处理的结果表明，所采用的方法能够有效地提升原始信号的质量，为后续的特征提取和参数计算提供了可靠的信号基础。图3.2预处理前后的心电信号波形对比展示了预处理前后的心电信号波形对比的情况。
+  Context (after):
+    [234]: 图3.2预处理前后的心电信号波形对比
+    [236]: 第4章  关键信号处理算法设计与优化
+
+--- Image #5 at Paragraph [241] ---
+Paragraph text: 
+  Relationship ID: rId16
+  Size: 2984500x3239770 EMU (3.26x3.54 inches)
+  Context (before):
+    [238]: 4.1.1 FFT 的频域带通滤波与 R 波特征增强
+    [239]: 为了突出R波的特征，本研究采用了基于 FFT 的频域带通滤波方法，通带设置为 5~18 Hz，该频段覆盖 QRS 波群的主要能量集中区域，能够增强 R 波分量并抑制 P 波、T 波等低频成分以及高频噪声[14]。该方法通过对信号进行 FFT 变换，在频域保留通带内的频率分量并将通带外分量置零，再通过 IFFT 恢复到时域。由于直接在频域操作，该方式具有零相位特性，避免了信号在滤波过程中产生相位失真
+  Context (after):
+    [242]: 图4 1 ECG心电信号处理流程图
+    [243]: 4.1.2 差分阈值R波检测算法设计
+    [244]: 本研究在传统的差分阈值算法基础上进行了改进，主要步骤包括差分运算、自适应阈值设定和候选峰筛选。首先计算一阶差分来增强R波的斜率特征，对差分信号取绝对值并进行移动平均平滑，得到差分包络信号。自适应阈值采用基于滑动窗口的动态阈值策略：
+
+--- Image #6 at Paragraph [349] ---
+Paragraph text: 
+  Relationship ID: rId17
+  Size: 3987800x2341880 EMU (4.36x2.56 inches)
+  Context (before):
+    [346]: 归一化变异系数，无量纲可比较
+    [347]: >0.12提示心律不齐
+  Context (after):
+    [350]: 图4.3  RR间期提取与心率变异性分析
+    [351]: 4.2 呼吸信号处理算法设计与优化
+    [352]: 4.2.1 LMS自适应滤波算法设计
+
+--- Image #7 at Paragraph [378] ---
+Paragraph text: 
+  Relationship ID: rId18
+  Size: 3945890x3746500 EMU (4.32x4.10 inches)
+  Context (before):
+    [375]: 权重更新速度
+    [376]: 反比于阶数和信号功率 保证收敛稳定性
+  Context (after):
+    [379]: 图4.4  LMS自适应滤波器信号流原理图
+    [380]: 4.2.2 呼吸信号特征提取与呼吸率计算
+    [381]: 经过LMS自适应滤波之后，呼吸信号的波形质量有了显著的提升。通过比较相邻的采样点来确定局部的极值点，设定幅值阈值（最大幅值的30%）和间距阈值（最小为0.5秒）来排除伪波峰，将相邻波峰的时间间隔作为呼吸周期。最终的呼吸率，取最近5个周期的平均值来提升测量的稳定性。
+
+--- Image #8 at Paragraph [390] ---
+Paragraph text: 
+  Relationship ID: rId19
+  Size: 5097145x3919855 EMU (5.57x4.29 inches)
+  Context (before):
+    [387]: 本研究采用了FIR低通滤波器来对原始的体温信号进行平滑处理，通带的截止频率设为0.05 Hz，阶数20阶。该滤波器可以有效地抑制50 Hz工频干扰和高频的电磁干扰，同时保留体温信号缓慢变化的趋势。经过滤波处理之后，体温读数的短期波动幅度从±0.3°C降至了±0.05°C以内，测量的稳定性有了显著的提升。
+    [388]: 4.3.2 线性校准算法设计与优化
+    [389]: NTC热敏电阻存在着固有的非线性和参数的分散性，因此需要进行校准处理[20]。本研究采用了线性的校准模型，在恒温水浴中设置了35°C、37°C、39°C这三个校准温度点，分别记录了传感器在各个点的输出电压值；然后利用最小二乘法对电压-温度数据进行了线性的拟合，得到了校准的参数k和b。将校准之后得到的温度值与标准水银温度计的读数进行了对比，测量误差控制在±0.1°C以内，满足了临床体温监测的精度要求
+  Context (after):
+    [391]: 图4.6  体温采集模块双模式架构图
+    [392]: 图4.7 体温校准前后的测量对比曲线
+
+--- Image #9 at Paragraph [399] ---
+Paragraph text: 
+  Relationship ID: rId20
+  Size: 3950970x3400425 EMU (4.32x3.72 inches)
+  Context (before):
+    [396]: 5.1.1 平台功能需求分析
+    [397]: 本平台需要满足以下的功能需求[6-7]：（1）支持心电、呼吸和体温三路信号的同步采集与预处理；（2）以实时波形的方式显示心电和呼吸信号，以数字方式显示体温，刷新频率不低于10 Hz；（3）在线计算心率、呼吸率和体温，刷新频率不低于1 Hz；（4）数据以.mat格式进行本地的存储，支持回放分析；（5）预设参数的正常范围（心率60~100次/分、呼吸率12~20次/分、体温36.0~37.3°C），在
+    [398]: 5.1.2 平台模块化架构设计
+  Context (after):
+    [400]: 图5.1  系统四层模块化架构图
+    [401]: 本平台采用了模块化的架构，分为了数据采集层、信号处理层、应用功能层和人机交互层这四个层次。数据采集层负责生理信号的获取与数字化；信号处理层负责完成数字滤波、特征提取和参数的计算；应用功能层实现了数据的存储和异常的报警；人机交互层则通过GUI来实现信号的显示和用户的操作。各个层次之间通过标准化的数据接口来进行通信，这种低耦合的设计便于后期的维护和功能的扩展[22]。
+    [402]: 5.2 基于MATLAB GUI的平台实现
+
+--- Image #10 at Paragraph [423] ---
+Paragraph text: 
+  Relationship ID: rId21
+  Size: 3698240x3183890 EMU (4.04x3.48 inches)
+  Context (before):
+    [420]: 节律异常检测、HRV分析、体温趋势
+    [421]: detectIrregularity()
+  Context (after):
+    [424]: 图5.2  Timer驱动实时监护架构图
+    [425]: 5.2.2 关键参数计算模块
+    [426]: 后台运行着各个信号处理的算法，定时读取最新采集到的2秒数据片段，分别调用R波检测算法、呼吸率提取算法和体温校准算法，从而计算出当前的心率、呼吸率和体温数值。计算的结果会存储到共享的数据结构中，供显示模块和报警模块来读取。为了确保数据的时效性，各个算法的单次执行时间控制在0.2秒以内。
+
+--- Image #11 at Paragraph [461] ---
+Paragraph text: 
+  Relationship ID: rId22
+  Size: 4304030x3653790 EMU (4.71x4.00 inches)
+  Context (before):
+    [458]: ≥0.18
+    [459]: 变异系数>0.18提示呼吸节律异常
+  Context (after):
+    [462]: 图5.3  多层级报警判断逻辑图
+    [463]: 5.3 平台功能调试与验证
+    [464]: 在完成了各个功能模块的开发之后，进行了集成的调试。以MIT-BIH数据库的数据作为输入，验证了各个功能的正常运行。测试结果表明：本平台可以正确地读取并显示信号的波形，计算得到的心率和呼吸率与离线算法的结果保持一致，数据存储完整，异常的阈值识别准确。图5.4展示了本平台的主界面。
+
+--- Image #12 at Paragraph [470] ---
+Paragraph text: 
+  Relationship ID: rId23
+  Size: 3265805x3404870 EMU (3.57x3.72 inches)
+  Context (before):
+    [467]: 第6章  系统性能实验验证与分析
+    [468]: 6.1 实验平台搭建
+    [469]: 本次实验验证是在配置为Intel Core i5处理器、8 GB内存和Windows 10操作系统的计算机上进行的，运行的MATLAB版本为R2023a。以MIT-BIH心律失常数据库和PhysioNet呼吸信号数据库作为标准的测试样本，结合了实验室实测的数据来进行综合的验证。图6.1展示了信号质量评估的完整流程，其中包括了原始信号的输入、预处理滤波、自适应噪声对消、残差信号的提取以及最终的SNR
+  Context (after):
+    [471]: 图6.1  信号质量评估流程图
+    [472]: 6.2 实验数据来源
+    [473]: 本实验的数据来源包括了以下两个部分：第一部分是公开数据库的数据，从MIT-BIH数据库中选取了6条心电记录（编号105、124、208、221、233、234），从PhysioNet数据库中选取了呼吸记录作为标准的测试集，这些数据都带有权威的标注信息，可以作为金标准来使用；第二部分是实验室实测的数据，通过采集设备获取了健康志愿者的心电、呼吸和体温同步记录。所有的数据都经过了预处理，以确保格式的一致
+
+Total images from section 4.1.4 onwards: 12
+
+========================================================================================================================
+PART 4: DOCUMENT STRUCTURE OVERVIEW (Sections found after 4.1.4)
+========================================================================================================================
+
+  [42] 4.1.4: 4.1.4 心率计算与结果验证15
+  [43] 4.2: 4.2 呼吸信号处理算法设计与优化16
+  [44] 4.2.1: 4.2.1 LMS自适应滤波算法设计16
+  [45] 4.2.2: 4.2.2 呼吸信号特征提取与呼吸率计算18
+  [46] 4.2.3: 4.2.3 基于MATLAB的算法仿真与参数优化18
+  [47] 4.3: 4.3 体温信号校准与处理19
+  [48] 4.3.1: 4.3.1 数字滤波实现19
+  [49] 4.3.2: 4.3.2 线性校准算法设计与优化19
+  [51] 5.1: 5.1 平台整体设计方案21
+  [52] 5.1.1: 5.1.1 平台功能需求分析21
+  [53] 5.1.2: 5.1.2 平台模块化架构设计21
+  [54] 5.2: 5.2 基于MATLAB GUI的平台实现22
+  [55] 5.2.1: 5.2.1 信号实时显示模块22
+  [56] 5.2.2: 5.2.2 关键参数计算模块23
+  [57] 5.2.3: 5.2.3 数据存储模块23
+  [58] 5.2.4: 5.2.4 异常报警模块23
+  [59] 5.3: 5.3 平台功能调试与验证25
+  [61] 6.1: 6.1 实验平台搭建26
+  [62] 6.2: 6.2 实验数据来源26
+  [63] 6.3: 6.3 性能评价指标确定27
+  [64] 6.4: 6.4 实验结果与分析27
+  [65] 6.4.1: 6.4.1 准确性测试结果27
+  [66] 6.4.2: 6.4.2 稳定性测试结果28
+  [67] 6.4.3: 6.4.3 抗干扰能力测试结果28
+  [68] 6.5: 6.5 实验结论28
+  [70] 7.1: 7.1 研究工作总结29
+  [71] 7.2: 7.2 研究创新点29
+  [72] 7.3: 7.3 研究局限性30
+  [73] 7.4: 7.4 未来研究展望30
+  [85] 1.1: 1.1 研究背景与意义
+  [93] 1.2: 1.2 国内外研究现状
+  [94] 1.2.1: 1.2.1 多生理参数监护系统研究现状
+  [97] 1.2.2: 1.2.2 生理信号处理算法研究现状
+  [106] 1.4: 1.4 论文结构安排
+  [110] 2.1: 2.1 核心生理参数的监测原理
+  [111] 2.1.1: 2.1.1 心电信号的产生与监测价值
+  [117] 2.1.2: 2.1.2 呼吸信号的产生与监测原理
+  [119] 2.1.3: 2.1.3 体温信号的监测原理与特征
+  [121] 2.2: 2.2 生理信号处理基础算法
+  [122] 2.2.1: 2.2.1 数字滤波算法原理
+  [155] 2.2.2: 2.2.2 差分阈值检测算法原理
+  [157] 2.2.3: 2.2.3 LMS自适应滤波算法原理
+  [159] 2.3: 2.3 MATLAB仿真技术基础
+  [160] 2.3.1: 2.3.1 MATLAB信号处理工具包
+  [162] 2.3.2: 2.3.2 MATLAB GUI设计基础
+  [166] 3.1: 3.1 真实数据集获取与处理
+  [167] 3.1.1: 3.1.1 MIT-BIH心律失常数据库
+  [192] 3.1.2: 3.1.2 PhysioNet呼吸信号数据库
+  [208] 360: 360 Hz
+  [209] 125: 125 Hz
+  [224] 3.2: 3.2 实时生理信号采集
+  [226] 3.3: 3.3 基于MATLAB的生理信号预处理
+  [227] 3.3.1: 3.3.1 数字滤波实现
+  [229] 3.3.2: 3.3.2 滑动中值滤波基线校正
+  [231] 3.4: 3.4 预处理结果分析
+  [237] 4.1: 4.1 心电信号R波检测算法设计与优化
+  [238] 4.1.1: 4.1.1 FFT 的频域带通滤波与 R 波特征增强
+  [243] 4.1.2: 4.1.2 差分阈值R波检测算法设计
+  [253] 4.1.3: 4.1.3 基于MATLAB的算法仿真与参数优化
+  [329] 4.1.4: 4.1.4 心率计算与结果验证
+  [351] 4.2: 4.2 呼吸信号处理算法设计与优化
+  [352] 4.2.1: 4.2.1 LMS自适应滤波算法设计
+  [380] 4.2.2: 4.2.2 呼吸信号特征提取与呼吸率计算
+  [382] 4.2.3: 4.2.3 基于MATLAB算法仿真与参数优化
+  [385] 4.3: 4.3 体温信号校准与处理
+  [386] 4.3.1: 4.3.1 数字滤波实现
+  [388] 4.3.2: 4.3.2 线性校准算法设计与优化
+  [395] 5.1: 5.1 平台整体设计方案
+  [396] 5.1.1: 5.1.1 平台功能需求分析
+  [398] 5.1.2: 5.1.2 平台模块化架构设计
+  [402] 5.2: 5.2 基于MATLAB GUI的平台实现
+  [403] 5.2.1: 5.2.1 信号实时显示模块
+  [425] 5.2.2: 5.2.2 关键参数计算模块
+  [427] 5.2.3: 5.2.3 数据存储模块
+  [431] 5.2.4: 5.2.4 异常报警模块
+  [463] 5.3: 5.3 平台功能调试与验证
+  [468] 6.1: 6.1 实验平台搭建
+  [472] 6.2: 6.2 实验数据来源
+  [474] 6.3: 6.3 性能评价指标确定
+  [477] 6.4: 6.4 实验结果与分析
+  [478] 6.4.1: 6.4.1 准确性测试结果
+  [481] 6.4.2: 6.4.2 稳定性测试结果
+  [483] 6.4.3: 6.4.3 抗干扰能力测试结果
+  [485] 6.5: 6.5 实验结论
+  [489] 7.1: 7.1 研究工作总结
+  [496] 7.2: 7.2 研究创新点
+  [500] 7.3: 7.3 研究局限性
+  [502] 7.4: 7.4 未来研究展望

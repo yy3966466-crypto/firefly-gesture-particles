@@ -1,0 +1,94 @@
+<h2>设计总览 · 萤火虫手势粒子交互</h2>
+<p class="subtitle">Three.js + MediaPipe Hands · 浏览器端 · 支持移动端</p>
+
+<div class="section">
+  <h3>项目结构</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:20px;font-family:monospace;font-size:12px;line-height:2;">
+      <div style="color:#5e6e8e;">firefly-particles/</div>
+      <div style="color:#5e6e8e;">├── index.html &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7c8aaa;">主页面 + 全屏 Canvas</span></div>
+      <div style="color:#5e6e8e;">├── style.css &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7c8aaa;">布局 + 加载提示</span></div>
+      <div style="color:#5e6e8e;">├── src/</div>
+      <div style="color:#5e6e8e;">│&nbsp;&nbsp; ├── main.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7c8aaa;">入口：初始化，主循环 requestAnimationFrame</span></div>
+      <div style="color:#5e6e8e;">│&nbsp;&nbsp; ├── camera.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7c8aaa;">getUserMedia，视频纹理贴到背景面片</span></div>
+      <div style="color:#5e6e8e;">│&nbsp;&nbsp; ├── hand-detector.js &nbsp;&nbsp;<span style="color:#7c8aaa;">MediaPipe Hands 加载 + 关键点提取</span></div>
+      <div style="color:#5e6e8e;">│&nbsp;&nbsp; ├── gesture-classifier.js <span style="color:#7c8aaa;">关键点 → 手势分类（状态机）</span></div>
+      <div style="color:#5e6e8e;">│&nbsp;&nbsp; ├── particle-engine.js &nbsp;<span style="color:#7c8aaa;">Three.js 粒子系统 + 自定义 Shader</span></div>
+      <div style="color:#5e6e8e;">│&nbsp;&nbsp; ├── physics.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7c8aaa;">波浪/涟漪/爆炸/光环四种力学生成器</span></div>
+      <div style="color:#5e6e8e;">│&nbsp;&nbsp; ├── audio.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7c8aaa;">Web Audio API 流水/微风/叮咚音效</span></div>
+      <div style="color:#5e6e8e;">│&nbsp;&nbsp; └── utils.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7c8aaa;">数学工具、缓动函数、移动端检测</span></div>
+      <div style="color:#5e6e8e;">└── shaders/</div>
+      <div style="color:#5e6e8e;">&nbsp;&nbsp;&nbsp; ├── firefly.vert &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7c8aaa;">粒子顶点着色器</span></div>
+      <div style="color:#5e6e8e;">&nbsp;&nbsp;&nbsp; └── firefly.frag &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7c8aaa;">粒子片元着色器（径向渐变发光）</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <h3>关键依赖</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:16px;">
+      <table style="width:100%;color:#c0d0e0;font-size:13px;">
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:6px 12px;color:#7c8aaa;">Three.js</td>
+          <td style="padding:6px 12px;">CDN 引入，~140KB gzip</td>
+          <td style="padding:6px 12px;color:#7c8aaa;">3D 渲染 + 粒子 Shader</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:6px 12px;color:#7c8aaa;">@mediapipe/hands</td>
+          <td style="padding:6px 12px;">CDN，~4MB（WASM 模型）</td>
+          <td style="padding:6px 12px;color:#7c8aaa;">21 关键点手部追踪</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 12px;color:#7c8aaa;">Web Audio API</td>
+          <td style="padding:6px 12px;">浏览器原生，零依赖</td>
+          <td style="padding:6px 12px;color:#7c8aaa;">流水/微风/叮咚音效合成</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <h3>性能目标</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:20px;">
+      <div style="display:flex;gap:16px;">
+        <div style="flex:1;text-align:center;padding:16px;background:rgba(160,208,128,0.05);border-radius:8px;">
+          <div style="color:#a0d080;font-size:28px;font-weight:600;">60fps</div>
+          <div style="color:#7c8aaa;font-size:11px;margin-top:6px;">桌面端 · 300粒子</div>
+        </div>
+        <div style="flex:1;text-align:center;padding:16px;background:rgba(196,160,240,0.05);border-radius:8px;">
+          <div style="color:#c4a0f0;font-size:28px;font-weight:600;">30fps</div>
+          <div style="color:#7c8aaa;font-size:11px;margin-top:6px;">移动端 · 180粒子</div>
+        </div>
+        <div style="flex:1;text-align:center;padding:16px;background:rgba(94,196,208,0.05);border-radius:8px;">
+          <div style="color:#5ec4d0;font-size:28px;font-weight:600;">&lt;50ms</div>
+          <div style="color:#7c8aaa;font-size:11px;margin-top:6px;">手势识别延迟</div>
+        </div>
+        <div style="flex:1;text-align:center;padding:16px;background:rgba(240,192,96,0.05);border-radius:8px;">
+          <div style="color:#f0c060;font-size:28px;font-weight:600;">&lt;2s</div>
+          <div style="color:#7c8aaa;font-size:11px;margin-top:6px;">首屏加载（含模型）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <div class="pros-cons">
+    <div class="pros"><h4>已确认的设计决策</h4><ul>
+      <li>Three.js + MediaPipe Hands 技术栈</li>
+      <li>萤火虫黄绿暖光 + 暗蓝紫夜空背景</li>
+      <li>镜像 AR 模式（摄像头背景 + 粒子叠加）</li>
+      <li>3 手势：涟漪/炸开恢复/光环轨迹</li>
+      <li>真实物理推动（粒子受力移动）</li>
+      <li>自然音效：流水 + 微风 + 叮咚</li>
+      <li>桌面 300 粒子，移动端 180 粒子</li>
+    </ul></div>
+    <div class="cons"><h4>待最后确认</h4><ul>
+      <li>需要加一个简单的 UI 引导提示吗？（如"试试张开手掌"）</li>
+      <li>需要在页面角落显示手势识别状态指示器吗？</li>
+    </ul></div>
+  </div>
+</div>

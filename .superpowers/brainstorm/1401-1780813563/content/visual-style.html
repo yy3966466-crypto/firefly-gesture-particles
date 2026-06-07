@@ -1,0 +1,55 @@
+<h2>粒子视觉风格</h2>
+<p class="subtitle">三种不同的美学方向，影响颜色、粒子形状、氛围</p>
+
+<div class="cards">
+  <div class="card" data-choice="cyber" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:linear-gradient(135deg,#0a0a2e 0%,#0d1b3e 60%,#1a3a6b 100%);min-height:160px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+      <div style="width:4px;height:4px;background:#00ffff;border-radius:50%;box-shadow:0 0 8px 2px #00ffff,0 0 20px 6px #0088ff;position:absolute;top:30%;left:30%;"></div>
+      <div style="width:3px;height:3px;background:#00ff88;border-radius:50%;box-shadow:0 0 6px 2px #00ff88;position:absolute;top:50%;left:55%;"></div>
+      <div style="width:4px;height:4px;background:#ff44ff;border-radius:50%;box-shadow:0 0 8px 2px #ff44ff;position:absolute;top:40%;left:70%;"></div>
+      <div style="width:2px;height:2px;background:#00ffff;border-radius:50%;box-shadow:0 0 4px 1px #00ffff;position:absolute;top:60%;left:40%;"></div>
+      <div style="width:3px;height:3px;background:#ffffff;border-radius:50%;box-shadow:0 0 10px 3px #ffffff;position:absolute;top:25%;left:60%;"></div>
+      <div style="width:120px;height:1px;background:linear-gradient(90deg,transparent,rgba(0,255,255,0.3),transparent);position:absolute;top:55%;left:25%;transform:rotate(-15deg);"></div>
+      <div style="width:80px;height:1px;background:linear-gradient(90deg,transparent,rgba(0,255,136,0.3),transparent);position:absolute;top:35%;left:45%;transform:rotate(10deg);"></div>
+    </div>
+    <div class="card-body">
+      <h3>赛博光点</h3>
+      <p>深蓝黑底，霓虹色粒子（青/紫/绿），发光点状，科技感强</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="dream" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:linear-gradient(135deg,#0f0c29 0%,#1a1245 50%,#24243e 100%);min-height:160px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+      <div style="width:12px;height:12px;background:radial-gradient(circle,#ff6b9d 0%,#c44dff 50%,transparent 70%);border-radius:50%;position:absolute;top:30%;left:35%;opacity:0.7;filter:blur(2px);"></div>
+      <div style="width:16px;height:16px;background:radial-gradient(circle,#4dc9f6 0%,#667eea 50%,transparent 70%);border-radius:50%;position:absolute;top:50%;left:55%;opacity:0.6;filter:blur(2px);"></div>
+      <div style="width:10px;height:10px;background:radial-gradient(circle,#f093fb 0%,#f5576c 50%,transparent 70%);border-radius:50%;position:absolute;top:45%;left:70%;opacity:0.7;filter:blur(2px);"></div>
+      <div style="width:14px;height:14px;background:radial-gradient(circle,#4facfe 0%,#00f2fe 50%,transparent 70%);border-radius:50%;position:absolute;top:65%;left:30%;opacity:0.5;filter:blur(3px);"></div>
+      <div style="width:8px;height:8px;background:radial-gradient(circle,#fa709a 0%,#fee140 50%,transparent 70%);border-radius:50%;position:absolute;top:25%;left:65%;opacity:0.6;filter:blur(1px);"></div>
+      <div style="position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.3);font-size:10px;letter-spacing:2px;">柔光渐变</div>
+    </div>
+    <div class="card-body">
+      <h3>梦幻光晕</h3>
+      <p>深紫底，暖色渐变光球（粉/紫/金），柔焦光晕，温暖治愈</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="ink" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:linear-gradient(135deg,#e8e4df 0%,#f0ece6 30%,#e0dcd5 60%,#d5d0c8 100%);min-height:160px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+      <div style="width:3px;height:3px;background:#1a1a2e;border-radius:50%;position:absolute;top:30%;left:30%;opacity:0.7;"></div>
+      <div style="width:4px;height:4px;background:#16213e;border-radius:50%;position:absolute;top:50%;left:55%;opacity:0.6;"></div>
+      <div style="width:3px;height:3px;background:#0f3460;border-radius:50%;position:absolute;top:40%;left:70%;opacity:0.8;"></div>
+      <div style="width:5px;height:5px;background:#1a1a2e;border-radius:50%;position:absolute;top:60%;left:40%;opacity:0.5;"></div>
+      <div style="width:2px;height:2px;background:#533483;border-radius:50%;position:absolute;top:25%;left:60%;opacity:0.7;"></div>
+      <div style="width:4px;height:4px;background:#0f3460;border-radius:50%;position:absolute;top:70%;left:65%;opacity:0.6;"></div>
+      <div style="position:absolute;bottom:15px;left:50%;transform:translateX(-50%);color:rgba(0,0,0,0.2);font-size:10px;letter-spacing:3px;">水墨  ·  极简</div>
+    </div>
+    <div class="card-body">
+      <h3>水墨极简</h3>
+      <p>浅色底，深色微粒（黑/深蓝/紫），像墨水在水中扩散，东方美学</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:24px;">
+  <p class="subtitle">每种风格都可以搭配方案C的三手势交互。看看哪个更接近你脑中画面？</p>
+</div>

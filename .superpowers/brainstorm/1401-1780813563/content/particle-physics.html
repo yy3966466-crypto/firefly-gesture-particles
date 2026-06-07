@@ -1,0 +1,149 @@
+<h2>粒子行为与物理参数</h2>
+<p class="subtitle">四种状态的粒子行为定义</p>
+
+<div class="section">
+  <h3>① 默认波浪流动</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:20px;">
+      <div style="display:flex;gap:20px;align-items:flex-start;">
+        <div style="flex:1;">
+          <div style="color:#a0d080;font-size:14px;margin-bottom:12px;">每条粒子有自己的相位 + 振幅</div>
+          <div style="color:#8ea0b8;font-size:12px;line-height:1.8;">
+            x(t) = x₀ + Aₓ · sin(ωt + φₓ)<br>
+            y(t) = y₀ + A_y · cos(ωt + φ_y)
+          </div>
+          <div style="color:#5e6e8e;font-size:11px;margin-top:12px;line-height:1.6;">
+            · 每个粒子随机分配 振幅 20~60px<br>
+            · 频率 ω 集中在 0.5~1.5 Hz（舒缓）<br>
+            · 相位随机，制造错落有致的波浪感<br>
+            · 整体形成多条水平波浪带的视觉效果
+          </div>
+        </div>
+        <div style="flex:1;background:rgba(160,208,128,0.05);border-radius:8px;padding:16px;text-align:center;">
+          <div style="color:#7c8aaa;font-size:11px;margin-bottom:8px;">粒子分布示意</div>
+          <svg width="200" height="100" viewBox="0 0 200 100">
+            <path d="M0,50 Q25,25 50,50 Q75,75 100,50 Q125,25 150,50 Q175,75 200,50" fill="none" stroke="rgba(160,208,128,0.3)" stroke-width="0.8"/>
+            <path d="M0,65 Q25,40 50,65 Q75,90 100,65 Q125,40 150,65 Q175,90 200,65" fill="none" stroke="rgba(160,208,128,0.15)" stroke-width="0.6"/>
+            <circle cx="30" cy="42" r="2" fill="rgba(200,255,160,0.6)"/>
+            <circle cx="70" cy="58" r="1.5" fill="rgba(180,240,130,0.5)"/>
+            <circle cx="110" cy="38" r="2" fill="rgba(200,255,150,0.55)"/>
+            <circle cx="150" cy="55" r="1.8" fill="rgba(190,245,140,0.5)"/>
+            <circle cx="180" cy="40" r="1.5" fill="rgba(210,255,160,0.45)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <h3>② 手展开 · 涟漪推动</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:20px;">
+      <table style="width:100%;color:#c0d0e0;font-size:13px;">
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;width:120px;">力场类型</td>
+          <td style="padding:8px 12px;">径向排斥力，从手掌中心向外衰减</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;">力的大小</td>
+          <td style="padding:8px 12px;">F = k / r²，r 为粒子到手心的距离，k 可调（约 800~1500）</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;">作用范围</td>
+          <td style="padding:8px 12px;">以手掌为圆心，半径约 200~300px，超出范围无力</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;">视觉涟漪</td>
+          <td style="padding:8px 12px;">发出 3~4 道同心圆环，逐渐扩大 + 透明度衰减，持续约 1.5s</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;color:#7c8aaa;">粒子行为</td>
+          <td style="padding:8px 12px;">被推开的粒子获得向外速度，离开力场后逐渐减速回到波浪</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <h3>③ 握拳 · 吸附→炸开</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:20px;">
+      <table style="width:100%;color:#c0d0e0;font-size:13px;">
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;width:120px;">阶段一</td>
+          <td style="padding:8px 12px;">握拳检测到后，周围粒子被引力拉向拳心，持续 ~300ms</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;">阶段二</td>
+          <td style="padding:8px 12px;">粒子聚合到最密时触发爆炸，所有粒子获得随机径向速度</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;">爆炸力度</td>
+          <td style="padding:8px 12px;">v = 200~600 px/s 随机，方向从拳心向外</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;">恢复</td>
+          <td style="padding:8px 12px;">爆炸后 ~2s 内粒子逐渐回归波浪流动，阻尼系数 0.95</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;color:#7c8aaa;">视觉</td>
+          <td style="padding:8px 12px;">聚合时粒子变亮，爆炸瞬间亮度峰值 + 白光闪烁</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <h3>④ 食指画圈 · 光环轨迹</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:20px;">
+      <table style="width:100%;color:#c0d0e0;font-size:13px;">
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;width:120px;">检测</td>
+          <td style="padding:8px 12px;">食指指尖连续运动，轨迹拟合成圆（累积角度 &gt; 300°）</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;">粒子响应</td>
+          <td style="padding:8px 12px;">沿途粒子被吸附到轨迹上，形成发光环</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:8px 12px;color:#7c8aaa;">光环寿命</td>
+          <td style="padding:8px 12px;">光环形成后保持 ~3s，然后粒子缓慢散开回归波浪</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;color:#7c8aaa;">视觉</td>
+          <td style="padding:8px 12px;">环上粒子更亮更大，线连接成环状，像萤火虫环绕飞行</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <h3>粒子视觉参数</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:20px;">
+      <table style="width:100%;color:#c0d0e0;font-size:13px;">
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:6px 12px;color:#7c8aaa;">数量</td><td style="padding:6px 12px;">桌面 300，移动端 180</td>
+          <td style="padding:6px 12px;color:#7c8aaa;">大小</td><td style="padding:6px 12px;">2~6px 光点，随机分布</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:6px 12px;color:#7c8aaa;">颜色</td><td style="padding:6px 12px;">#b4ffa0 → #f0ffc8 萤火虫黄绿暖光</td>
+          <td style="padding:6px 12px;color:#7c8aaa;">透明度</td><td style="padding:6px 12px;">0.4~0.9，随速度和状态变化</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:6px 12px;color:#7c8aaa;">发光</td><td style="padding:6px 12px;">径向渐变 Shader 模拟柔光</td>
+          <td style="padding:6px 12px;color:#7c8aaa;">闪烁</td><td style="padding:6px 12px;">随机 sin 波动，周期 1~3s</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 12px;color:#7c8aaa;">拖尾</td><td style="padding:6px 12px;">爆炸/快速移动时粒子产生 3~5 帧拖尾</td>
+          <td style="padding:6px 12px;color:#7c8aaa;">背景</td><td style="padding:6px 12px;">摄像头画面（镜像）+ 略微暗角</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

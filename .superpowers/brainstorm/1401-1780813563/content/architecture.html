@@ -1,0 +1,93 @@
+<h2>系统架构概览</h2>
+<p class="subtitle">Three.js + MediaPipe Hands · 浏览器端</p>
+
+<div class="section">
+  <div class="mockup">
+    <div class="mockup-header">分层架构</div>
+    <div class="mockup-body" style="background:#0d0d1a;padding:28px;font-family:monospace;font-size:13px;line-height:2.2;">
+      <div style="color:#7c8aaa;margin-bottom:8px;">┌─────────────────────────────────────────┐</div>
+      <div style="color:#a0b4d0;">│  📷 摄像头层 &nbsp; getUserMedia + video        │</div>
+      <div style="color:#7c8aaa;">├─────────────────────────────────────────┤</div>
+      <div style="color:#c4a0f0;">│  ✋ 手势识别 &nbsp; MediaPipe Hands → 21关键点   │</div>
+      <div style="color:#7c8aaa;">├─────────────────────────────────────────┤</div>
+      <div style="color:#5ec4d0;">│  🎯 手势分类 &nbsp; 手掌/握拳/食指画圈 → 事件     │</div>
+      <div style="color:#7c8aaa;">├─────────────────────────────────────────┤</div>
+      <div style="color:#a0d080;">│  ✨ 粒子引擎 &nbsp; Three.js Points + Shader    │</div>
+      <div style="color:#7c8aaa;">│  &nbsp;&nbsp;&nbsp;├ 波浪流动 (默认)                    │</div>
+      <div style="color:#7c8aaa;">│  &nbsp;&nbsp;&nbsp;├ 涟漪扩散 (手势触发)                │</div>
+      <div style="color:#7c8aaa;">│  &nbsp;&nbsp;&nbsp;├ 炸开恢复 (手势触发)                │</div>
+      <div style="color:#7c8aaa;">│  &nbsp;&nbsp;&nbsp;└ 光环轨迹 (手势触发)                │</div>
+      <div style="color:#7c8aaa;">├─────────────────────────────────────────┤</div>
+      <div style="color:#f0c060;">│  🔊 音效层 &nbsp; Web Audio API → 手势触发音效     │</div>
+      <div style="color:#7c8aaa;">├─────────────────────────────────────────┤</div>
+      <div style="color:#e0e0e0;">│  🖥 渲染管线 &nbsp; 摄像头背景 + 粒子叠加            │</div>
+      <div style="color:#7c8aaa;">└─────────────────────────────────────────┘</div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:20px;">
+  <h3>数据流</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:24px;display:flex;align-items:center;justify-content:space-around;flex-wrap:wrap;gap:12px;font-size:12px;">
+        <div style="text-align:center;padding:16px 20px;background:rgba(160,180,208,0.08);border-radius:8px;border:1px solid rgba(160,180,208,0.15);">
+          <div style="color:#a0b4d0;font-weight:600;">摄像头帧</div>
+          <div style="color:#5e6e8e;margin-top:4px;">1920×1080 @30fps</div>
+        </div>
+        <div style="color:#5e6e8e;font-size:18px;">→</div>
+        <div style="text-align:center;padding:16px 20px;background:rgba(196,160,240,0.08);border-radius:8px;border:1px solid rgba(196,160,240,0.15);">
+          <div style="color:#c4a0f0;font-weight:600;">MediaPipe Hands</div>
+          <div style="color:#5e6e8e;margin-top:4px;">21个手部关键点</div>
+        </div>
+        <div style="color:#5e6e8e;font-size:18px;">→</div>
+        <div style="text-align:center;padding:16px 20px;background:rgba(94,196,208,0.08);border-radius:8px;border:1px solid rgba(94,196,208,0.15);">
+          <div style="color:#5ec4d0;font-weight:600;">手势分类器</div>
+          <div style="color:#5e6e8e;margin-top:4px;">状态机 + 阈值判断</div>
+        </div>
+        <div style="color:#5e6e8e;font-size:18px;">→</div>
+        <div style="text-align:center;padding:16px 20px;background:rgba(160,208,128,0.08);border-radius:8px;border:1px solid rgba(160,208,128,0.15);">
+          <div style="color:#a0d080;font-weight:600;">粒子引擎</div>
+          <div style="color:#5e6e8e;margin-top:4px;">位置/速度/力 · Three.js</div>
+        </div>
+        <div style="color:#5e6e8e;font-size:18px;">→</div>
+        <div style="text-align:center;padding:16px 20px;background:rgba(224,224,224,0.08);border-radius:8px;border:1px solid rgba(224,224,224,0.15);">
+          <div style="color:#e0e0e0;font-weight:600;">合成输出</div>
+          <div style="color:#5e6e8e;margin-top:4px;">Canvas / WebGL</div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:20px;">
+  <h3>手势识别细节</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#0d0d1a;padding:20px;">
+      <table style="width:100%;border-collapse:collapse;color:#c0d0e0;font-size:13px;">
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+          <th style="text-align:left;padding:8px 12px;color:#7c8aaa;">手势</th>
+          <th style="text-align:left;padding:8px 12px;color:#7c8aaa;">判断逻辑</th>
+          <th style="text-align:left;padding:8px 12px;color:#7c8aaa;">粒子响应</th>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:10px 12px;">✋ 张开手掌</td>
+          <td style="padding:10px 12px;color:#8ea0b8;">五指指尖间距 &gt; 阈值</td>
+          <td style="padding:10px 12px;color:#a0d080;">以手掌为中心发出涟漪力场，推开粒子</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+          <td style="padding:10px 12px;">✊ 握拳</td>
+          <td style="padding:10px 12px;color:#8ea0b8;">五指指尖间距 &lt; 阈值</td>
+          <td style="padding:10px 12px;color:#a0d080;">吸附粒子到拳心 → 延迟0.3s → 径向炸开</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 12px;">👆 食指画圈</td>
+          <td style="padding:10px 12px;color:#8ea0b8;">食指轨迹拟合圆形（连续帧角度累积 &gt; 300°）</td>
+          <td style="padding:10px 12px;color:#a0d080;">粒子吸附到指尖运动轨迹形成光环</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <p class="subtitle">下面看看各部分细节是否认可？先确认整体架构。</p>
+</div>

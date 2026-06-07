@@ -1,0 +1,3 @@
+signal_type,database_name,record_id,fs_hz,duration_s,snr_db,event_count,mean_rate_bpm,std_rate_bpm,min_rate_bpm,max_rate_bpm,sampling_mode
+ECG,MIT-BIH Arrhythmia Database,234,360,1805.55277777778,-3.07305270656645,2515,88.7702972888245,11.7310272511734,5.52288417284582,146.938775510204,abnormal
+Respiration,BIDMC PPG and Respiration Dataset,38,100,600,-23.668809900249,280,31.107324990431,8.78323908306953,11.3636363636364,42.5531914893617,abnormal

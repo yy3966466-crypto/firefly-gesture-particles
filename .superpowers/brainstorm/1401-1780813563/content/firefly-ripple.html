@@ -1,0 +1,99 @@
+<h2>萤火虫 × 水波纹</h2>
+<p class="subtitle">粒子像萤火虫群在夜空中浮动，手势触发水面涟漪效果</p>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">默认状态 · 萤火虫波浪</div>
+    <div class="mockup-body" style="background:linear-gradient(135deg,#050510 0%,#0c0a24 50%,#0f1328 100%);min-height:220px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+      <!-- firefly particles -->
+      <div style="width:6px;height:6px;background:radial-gradient(circle,rgba(180,255,160,0.95) 0%,rgba(140,220,100,0.6) 40%,transparent 70%);border-radius:50%;position:absolute;top:20%;left:15%;filter:blur(1px);box-shadow:0 0 18px 6px rgba(180,255,160,0.4);animation:pulse 2s ease-in-out infinite;"></div>
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(200,240,120,0.9) 0%,rgba(160,210,80,0.5) 40%,transparent 70%);border-radius:50%;position:absolute;top:35%;left:40%;filter:blur(1px);box-shadow:0 0 14px 5px rgba(200,240,120,0.35);"></div>
+      <div style="width:7px;height:7px;background:radial-gradient(circle,rgba(220,255,180,0.85) 0%,rgba(170,230,100,0.5) 40%,transparent 70%);border-radius:50%;position:absolute;top:55%;left:25%;filter:blur(1.5px);box-shadow:0 0 20px 7px rgba(220,255,180,0.4);"></div>
+      <div style="width:4px;height:4px;background:radial-gradient(circle,rgba(190,250,140,0.9) 0%,rgba(150,210,90,0.5) 40%,transparent 70%);border-radius:50%;position:absolute;top:25%;left:70%;filter:blur(1px);box-shadow:0 0 12px 4px rgba(190,250,140,0.35);"></div>
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(210,255,160,0.85) 0%,rgba(160,220,100,0.5) 40%,transparent 70%);border-radius:50%;position:absolute;top:60%;left:65%;filter:blur(1px);box-shadow:0 0 16px 5px rgba(210,255,160,0.35);"></div>
+      <div style="width:3px;height:3px;background:radial-gradient(circle,rgba(240,255,200,0.9) 0%,rgba(200,240,140,0.5) 40%,transparent 70%);border-radius:50%;position:absolute;top:45%;left:85%;filter:blur(0.5px);box-shadow:0 0 8px 3px rgba(240,255,200,0.4);"></div>
+      <div style="width:4px;height:4px;background:radial-gradient(circle,rgba(170,240,120,0.85) 0%,rgba(130,200,80,0.5) 40%,transparent 70%);border-radius:50%;position:absolute;top:70%;left:50%;filter:blur(1px);box-shadow:0 0 10px 3px rgba(170,240,120,0.3);"></div>
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(200,255,150,0.88) 0%,rgba(150,220,90,0.5) 40%,transparent 70%);border-radius:50%;position:absolute;top:15%;left:50%;filter:blur(1px);box-shadow:0 0 14px 5px rgba(200,255,150,0.38);"></div>
+      <!-- water ripple lines -->
+      <div style="position:absolute;top:40%;left:32%;width:80px;height:1px;background:linear-gradient(90deg,transparent,rgba(160,240,180,0.15),transparent);transform:rotate(-8deg);"></div>
+      <div style="position:absolute;top:52%;left:28%;width:100px;height:1px;background:linear-gradient(90deg,transparent,rgba(160,240,180,0.12),transparent);transform:rotate(5deg);"></div>
+      <div style="position:absolute;top:48%;left:45%;width:70px;height:1px;background:linear-gradient(90deg,transparent,rgba(160,240,180,0.1),transparent);transform:rotate(-3deg);"></div>
+      <!-- subtle wave curves -->
+      <svg style="position:absolute;bottom:30%;left:0;width:100%;height:40px;opacity:0.08;" viewBox="0 0 400 40">
+        <path d="M0,20 Q50,0 100,20 Q150,40 200,20 Q250,0 300,20 Q350,40 400,20" fill="none" stroke="#a0f0b4" stroke-width="1"/>
+      </svg>
+      <div style="position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:rgba(180,240,160,0.2);font-size:10px;letter-spacing:3px;">🌊 萤火虫浮动波浪</div>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">手掌张开 · 涟漪扩散</div>
+    <div class="mockup-body" style="background:linear-gradient(135deg,#050510 0%,#0c0a24 50%,#0f1328 100%);min-height:220px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+      <!-- hand point at center -->
+      <div style="position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);width:30px;height:30px;border-radius:50%;background:radial-gradient(circle,rgba(160,255,180,0.25) 0%,transparent 60%);"></div>
+      <!-- ripple rings -->
+      <div style="position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;border:1px solid rgba(160,240,180,0.35);box-shadow:0 0 10px 2px rgba(160,240,180,0.2);"></div>
+      <div style="position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);width:100px;height:100px;border-radius:50%;border:1px solid rgba(160,240,180,0.2);box-shadow:0 0 8px 2px rgba(160,240,180,0.12);"></div>
+      <div style="position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;border:1px solid rgba(160,240,180,0.1);"></div>
+      <!-- fireflies pushed outward -->
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(180,255,160,0.85) 0%,rgba(140,220,100,0.4) 50%,transparent 70%);border-radius:50%;position:absolute;top:25%;left:25%;filter:blur(1px);box-shadow:0 0 14px 5px rgba(180,255,160,0.35);"></div>
+      <div style="width:4px;height:4px;background:radial-gradient(circle,rgba(200,240,120,0.8) 0%,rgba(160,210,80,0.4) 50%,transparent 70%);border-radius:50%;position:absolute;top:30%;left:70%;filter:blur(1px);box-shadow:0 0 12px 4px rgba(200,240,120,0.3);"></div>
+      <div style="width:6px;height:6px;background:radial-gradient(circle,rgba(190,250,140,0.85) 0%,rgba(150,210,90,0.4) 50%,transparent 70%);border-radius:50%;position:absolute;top:65%;left:30%;filter:blur(1px);box-shadow:0 0 16px 5px rgba(190,250,140,0.35);"></div>
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(210,255,160,0.8) 0%,rgba(160,220,100,0.4) 50%,transparent 70%);border-radius:50%;position:absolute;top:62%;left:68%;filter:blur(1px);box-shadow:0 0 12px 4px rgba(210,255,160,0.3);"></div>
+      <div style="position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:rgba(160,240,180,0.25);font-size:10px;letter-spacing:2px;">✋ 涟漪以手为中心向外扩散</div>
+    </div>
+  </div>
+</div>
+
+<div class="split" style="margin-top:20px;">
+  <div class="mockup">
+    <div class="mockup-header">握拳 · 炸开 → 缓缓恢复</div>
+    <div class="mockup-body" style="background:linear-gradient(135deg,#050510 0%,#0c0a24 50%,#0f1328 100%);min-height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+      <!-- explosion streaks -->
+      <div style="position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);width:6px;height:6px;background:radial-gradient(circle,rgba(255,255,200,0.9),transparent 70%);border-radius:50%;box-shadow:0 0 25px 10px rgba(255,255,200,0.6);"></div>
+      <!-- fireflies flying outward -->
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(220,255,180,0.9) 0%,rgba(180,250,140,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:18%;left:12%;filter:blur(1px);box-shadow:0 0 16px 6px rgba(220,255,180,0.5);"></div>
+      <div style="width:4px;height:4px;background:radial-gradient(circle,rgba(200,240,150,0.85) 0%,rgba(150,220,100,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:15%;left:78%;filter:blur(1px);box-shadow:0 0 14px 5px rgba(200,240,150,0.45);"></div>
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(180,255,140,0.85) 0%,rgba(140,210,90,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:75%;left:18%;filter:blur(1px);box-shadow:0 0 14px 5px rgba(180,255,140,0.4);"></div>
+      <div style="width:6px;height:6px;background:radial-gradient(circle,rgba(210,255,170,0.9) 0%,rgba(170,240,120,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:72%;left:80%;filter:blur(1px);box-shadow:0 0 18px 6px rgba(210,255,170,0.5);"></div>
+      <div style="width:4px;height:4px;background:radial-gradient(circle,rgba(190,240,130,0.8) 0%,rgba(140,210,80,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:45%;left:90%;filter:blur(1px);box-shadow:0 0 10px 4px rgba(190,240,130,0.4);"></div>
+      <div style="width:3px;height:3px;background:radial-gradient(circle,rgba(240,255,200,0.85) 0%,rgba(200,240,150,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:48%;left:8%;filter:blur(1px);box-shadow:0 0 8px 3px rgba(240,255,200,0.4);"></div>
+      <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:rgba(220,255,160,0.25);font-size:10px;letter-spacing:2px;">✊ 萤火虫炸开 → 缓缓飘回波浪</div>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">食指画圈 · 光环轨迹</div>
+    <div class="mockup-body" style="background:linear-gradient(135deg,#050510 0%,#0c0a24 50%,#0f1328 100%);min-height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+      <!-- ring trail -->
+      <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.7;" viewBox="0 0 320 200">
+        <ellipse cx="160" cy="100" rx="90" ry="55" fill="none" stroke="rgba(180,240,120,0.35)" stroke-width="1.5" stroke-dasharray="8 4"/>
+        <ellipse cx="160" cy="100" rx="70" ry="42" fill="none" stroke="rgba(160,220,100,0.2)" stroke-width="1"/>
+      </svg>
+      <!-- fireflies on the ring -->
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(200,255,150,0.9) 0%,rgba(150,220,90,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:32%;left:28%;filter:blur(1px);box-shadow:0 0 14px 5px rgba(200,255,150,0.5);"></div>
+      <div style="width:4px;height:4px;background:radial-gradient(circle,rgba(180,240,130,0.85) 0%,rgba(140,200,80,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:28%;left:55%;filter:blur(1px);box-shadow:0 0 12px 4px rgba(180,240,130,0.4);"></div>
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(210,255,160,0.9) 0%,rgba(160,230,100,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:38%;left:72%;filter:blur(1px);box-shadow:0 0 14px 5px rgba(210,255,160,0.45);"></div>
+      <div style="width:6px;height:6px;background:radial-gradient(circle,rgba(240,255,180,0.95) 0%,rgba(200,250,140,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:52%;left:80%;filter:blur(1px);box-shadow:0 0 18px 6px rgba(240,255,180,0.5);"></div>
+      <div style="width:4px;height:4px;background:radial-gradient(circle,rgba(170,240,120,0.85) 0%,rgba(130,200,80,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:60%;left:48%;filter:blur(1px);box-shadow:0 0 10px 3px rgba(170,240,120,0.4);"></div>
+      <div style="width:5px;height:5px;background:radial-gradient(circle,rgba(220,255,170,0.9) 0%,rgba(170,230,110,0.5) 50%,transparent 70%);border-radius:50%;position:absolute;top:55%;left:22%;filter:blur(1px);box-shadow:0 0 14px 5px rgba(220,255,170,0.45);"></div>
+      <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:rgba(180,240,160,0.25);font-size:10px;letter-spacing:2px;">👆 萤火虫沿指尖轨迹飞舞成环</div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:24px;">
+  <div class="pros-cons">
+    <div class="pros"><h4>这个方向的特点</h4><ul>
+      <li>粒子颜色：萤火虫黄绿暖光为主</li>
+      <li>背景：深邃夜空暗蓝紫</li>
+      <li>默认动效：粒子群呈波浪状浮动，偶有微光闪烁</li>
+      <li>三手势：涟漪扩散 / 炸开恢复 / 光环轨迹</li>
+    </ul></div>
+    <div class="cons"><h4>需要确认</h4><ul>
+      <li>粒子数量级：稀疏几十颗 vs 密集几百颗？</li>
+      <li>涟漪是纯视觉还是粒子真的被推动？</li>
+      <li>是否需要音效配合？</li>
+    </ul></div>
+  </div>
+</div>
