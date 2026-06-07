@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { isMobile, PARTICLE_COUNT } from './utils.js';
-import { initCamera, createVideoElement } from './camera.js';
+import { initCamera } from './camera.js';
 import { createScene, handleResize } from './scene.js';
 import { createParticleSystem, updateParticleWave } from './particle-engine.js';
 import { createPhysicsEngine, integrate } from './physics.js';
@@ -12,8 +12,7 @@ import { createRippleRenderer } from './ripple-renderer.js';
 
 async function main() {
   // 1. 摄像头
-  const video = createVideoElement();
-  await initCamera(video);
+  const { video } = await initCamera();
 
   // 2. Three.js 场景
   const { renderer, scene, camera, bgPlane } = createScene(video);
