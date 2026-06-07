@@ -43,15 +43,21 @@ export default function App() {
     setTimeout(() => setRipplePos(null), 2500);
   }, []);
 
-  // 摄像头视频元素
-  const videoStyle = useMemo(() => ({
-    position: 'fixed', top: 0, left: 0, width: 1, height: 1,
-    opacity: 0.01, pointerEvents: 'none', zIndex: -1
-  }), []);
+  // 启动摄像头
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    navigator.mediaDevices.getUserMedia({
+      video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } }
+    }).then(stream => {
+      video.srcObject = stream;
+      video.play();
+    }).catch(() => {});
+  }, []);
 
   return (
     <div className="w-full h-full" onClick={handleClick}>
-      <video ref={videoRef} style={videoStyle} playsInline autoPlay muted />
+      <video ref={videoRef} style={{ position:'fixed',top:0,left:0,width:'320px',height:'240px',opacity:0.01,pointerEvents:'none',zIndex:-1 }} playsInline autoPlay muted />
 
       {error && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
@@ -66,6 +72,7 @@ export default function App() {
         <>
           <ParticleScene
             key={ready ? 'ready' : 'loading'}
+            videoRef={videoRef}
             animState={animState}
             handPos={indexTipNDC}
             ripplePos={ripplePos}

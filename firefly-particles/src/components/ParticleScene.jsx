@@ -208,15 +208,41 @@ function Particles({ animState, handPos, ripplePos, onAnimComplete }) {
   );
 }
 
+// ══════════════ 摄像头背景 ══════════════
+function VideoBackground({ videoRef }) {
+  const meshRef = useRef();
+  const textureRef = useRef();
+
+  useEffect(() => {
+    const video = videoRef?.current;
+    if (!video) return;
+    const tex = new THREE.VideoTexture(video);
+    tex.minFilter = THREE.LinearFilter;
+    tex.magFilter = THREE.LinearFilter;
+    // 镜像：翻转 UV
+    tex.repeat.set(-1, 1);
+    tex.offset.set(1, 0);
+    textureRef.current = tex;
+  }, [videoRef]);
+
+  return (
+    <mesh ref={meshRef} position={[0, 0, -4]}>
+      <planeGeometry args={[16, 9]} />
+      <meshBasicMaterial map={textureRef.current} depthTest={false} depthWrite={false} />
+    </mesh>
+  );
+}
+
 // ══════════════ 场景容器 ══════════════
-function SceneContent({ animState, handPos, ripplePos, onAnimComplete }) {
+function SceneContent({ videoRef, animState, handPos, ripplePos, onAnimComplete }) {
   return (
     <>
       <ambientLight intensity={0.1} />
+      <VideoBackground videoRef={videoRef} />
       {/* 半透明水面 */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -2.5, 0]}>
         <planeGeometry args={[16, 12]} />
-        <meshStandardMaterial color="#1a1a3e" transparent opacity={0.15} depthWrite={false} />
+        <meshStandardMaterial color="#1a1a3e" transparent opacity={0.1} depthWrite={false} />
       </mesh>
       <Particles animState={animState} handPos={handPos} ripplePos={ripplePos} onAnimComplete={onAnimComplete} />
       {ripplePos && <RippleRing cx={ripplePos.x} cy={ripplePos.y} cz={ripplePos.z} id={ripplePos.id} />}
@@ -224,7 +250,7 @@ function SceneContent({ animState, handPos, ripplePos, onAnimComplete }) {
   );
 }
 
-export default function ParticleScene({ animState, handPos, ripplePos, onAnimComplete }) {
+export default function ParticleScene({ videoRef, animState, handPos, ripplePos, onAnimComplete }) {
   return (
     <Canvas
       camera={{ position: [0, 0, 6], fov: 55, near: 0.1, far: 50 }}
@@ -233,7 +259,7 @@ export default function ParticleScene({ animState, handPos, ripplePos, onAnimCom
       style={{ position: 'fixed', inset: 0 }}
     >
       <color attach="background" args={['#050510']} />
-      <SceneContent animState={animState} handPos={handPos} ripplePos={ripplePos} onAnimComplete={onAnimComplete} />
+      <SceneContent videoRef={videoRef} animState={animState} handPos={handPos} ripplePos={ripplePos} onAnimComplete={onAnimComplete} />
     </Canvas>
   );
 }
