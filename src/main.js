@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { isMobile, PARTICLE_COUNT } from './utils.js';
-import { initCamera } from './camera.js';
+import { createVideoElement } from './camera.js';
 import { createScene, handleResize } from './scene.js';
 import { createParticleSystem, updateParticleWave } from './particle-engine.js';
 import { createPhysicsEngine, integrate } from './physics.js';
@@ -11,8 +11,8 @@ import { createAudioEngine } from './audio.js';
 import { createRippleRenderer } from './ripple-renderer.js';
 
 async function main() {
-  // 1. 摄像头
-  const { video } = await initCamera();
+  // 1. 创建 video 元素（MediaPipe Camera 会管理摄像头）
+  const video = createVideoElement();
 
   // 2. Three.js 场景
   const { renderer, scene, camera, bgPlane } = createScene(video);
@@ -36,10 +36,10 @@ async function main() {
   const statusLabel = statusEl.querySelector('.label');
 
   // 更新加载文字
-  loadingText.textContent = '正在加载手势模型...（约 10 秒）';
+  loadingText.textContent = '正在加载手势模型...';
 
-  // 手势检测（带进度回调）
-  const hands = await initHandDetector((msg) => {
+  // 手势检测（MediaPipe Camera 管理视频帧推送）
+  const { hands } = await initHandDetector(video, (msg) => {
     loadingText.textContent = msg;
   });
 
@@ -81,57 +81,41 @@ async function main() {
     const w = window.innerWidth;
     const h = window.innerHeight;
 
-    let handDebugCount = 0;
+    // 手势检测（同步读取 MediaPipe 结果）
+    const handData = detectHands();
+    classifyGesture(classifier, handData, dt, 640, 480, w, h);
 
-    // 手势检测
-    detectHands(hands, video).then(handData => {
-      handDebugCount++;
-      const hasHand = handData.length > 0;
+    const state = classifier.state;
 
-      // 调试：每60帧打印一次
-      if (handDebugCount % 60 === 1) {
-        console.log('👋 hands detected:', handData.length, 'state:', classifier.state,
-          'video:', video.videoWidth, 'x', video.videoHeight);
-      }
-
-      classifyGesture(classifier, handData, dt, video.videoWidth, video.videoHeight, w, h);
-
-      const state = classifier.state;
-
-      // 状态变化 → 音频触发
-      if (state !== prevGesture) {
-        console.log('🎯 gesture change:', prevGesture, '→', state);
-        if (state === GestureState.PALM) {
-          audio.playRipple();
-          const ripple = applyRipple(particles.positions, physics, classifier.handCenter, w, h);
-          rippleRenderer.spawn(ripple.cx, ripple.cy);
-        }
-        if (state === GestureState.FIST_EXPLODE) {
-          audio.playExplosion();
-          applyExplosion(particles.positions, physics, classifier.handCenter, w, h);
-        }
-        if (state === GestureState.CIRCLE_HOLD) {
-          audio.playRing();
-        }
-      }
-
-      // 持续效果
+    if (state !== prevGesture) {
       if (state === GestureState.PALM) {
-        applyRipple(particles.positions, physics, classifier.handCenter, w, h);
+        audio.playRipple();
+        const ripple = applyRipple(particles.positions, physics, classifier.handCenter, w, h);
+        rippleRenderer.spawn(ripple.cx, ripple.cy);
       }
-      if (state === GestureState.FIST_ATTRACT) {
-        applyAttract(particles.positions, physics, classifier.handCenter, w, h);
+      if (state === GestureState.FIST_EXPLODE) {
+        audio.playExplosion();
+        applyExplosion(particles.positions, physics, classifier.handCenter, w, h);
       }
       if (state === GestureState.CIRCLE_HOLD) {
-        applyRingAttraction(particles.positions, physics, classifier, w, h);
+        audio.playRing();
       }
+    }
 
-      // 状态指示器（显示调试信息）
-      updateStatusIndicator(state, statusEl, statusDot, statusLabel);
-      statusLabel.textContent = (window.__handDebug || '?') + ' st:' + state;
+    if (state === GestureState.PALM) {
+      applyRipple(particles.positions, physics, classifier.handCenter, w, h);
+    }
+    if (state === GestureState.FIST_ATTRACT) {
+      applyAttract(particles.positions, physics, classifier.handCenter, w, h);
+    }
+    if (state === GestureState.CIRCLE_HOLD) {
+      applyRingAttraction(particles.positions, physics, classifier, w, h);
+    }
 
-      prevGesture = state;
-    });
+    updateStatusIndicator(state, statusEl, statusDot, statusLabel);
+    statusLabel.textContent = (window.__handDebug || '?') + ' ' + state;
+
+    prevGesture = state;
 
     // 物理积分
     integrate(particles.positions, particles.basePositions, physics, dt, w, h);
