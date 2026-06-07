@@ -82,14 +82,26 @@ async function main() {
     const w = window.innerWidth;
     const h = window.innerHeight;
 
+    let handDebugCount = 0;
+
     // 手势检测
     detectHands(hands, video).then(handData => {
+      handDebugCount++;
+      const hasHand = handData.length > 0;
+
+      // 调试：每60帧打印一次
+      if (handDebugCount % 60 === 1) {
+        console.log('👋 hands detected:', handData.length, 'state:', classifier.state,
+          'video:', video.videoWidth, 'x', video.videoHeight);
+      }
+
       classifyGesture(classifier, handData, dt, video.videoWidth, video.videoHeight, w, h);
 
       const state = classifier.state;
 
       // 状态变化 → 音频触发
       if (state !== prevGesture) {
+        console.log('🎯 gesture change:', prevGesture, '→', state);
         if (state === GestureState.PALM) {
           audio.playRipple();
           const ripple = applyRipple(particles.positions, physics, classifier.handCenter, w, h);
@@ -115,8 +127,10 @@ async function main() {
         applyRingAttraction(particles.positions, physics, classifier, w, h);
       }
 
-      // 状态指示器
+      // 状态指示器（显示调试信息）
+      const handIcon = hasHand ? '🖐' : '👻';
       updateStatusIndicator(state, statusEl, statusDot, statusLabel);
+      statusLabel.textContent = statusLabel.textContent + ' ' + handIcon + '#' + handData.length;
 
       prevGesture = state;
     });
