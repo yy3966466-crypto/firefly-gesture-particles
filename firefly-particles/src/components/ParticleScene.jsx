@@ -210,8 +210,7 @@ function Particles({ animState, handPos, ripplePos, onAnimComplete }) {
 
 // ══════════════ 摄像头背景 ══════════════
 function VideoBackground({ videoRef }) {
-  const meshRef = useRef();
-  const textureRef = useRef();
+  const matRef = useRef();
 
   useEffect(() => {
     const video = videoRef?.current;
@@ -219,16 +218,15 @@ function VideoBackground({ videoRef }) {
     const tex = new THREE.VideoTexture(video);
     tex.minFilter = THREE.LinearFilter;
     tex.magFilter = THREE.LinearFilter;
-    // 镜像：翻转 UV
     tex.repeat.set(-1, 1);
     tex.offset.set(1, 0);
-    textureRef.current = tex;
+    if (matRef.current) matRef.current.map = tex;
   }, [videoRef]);
 
   return (
-    <mesh ref={meshRef} position={[0, 0, -4]}>
+    <mesh position={[0, 0, -4]}>
       <planeGeometry args={[16, 9]} />
-      <meshBasicMaterial map={textureRef.current} depthTest={false} depthWrite={false} />
+      <meshBasicMaterial ref={matRef} color="#0a0a1e" depthTest={false} depthWrite={false} />
     </mesh>
   );
 }

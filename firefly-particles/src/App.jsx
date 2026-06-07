@@ -56,7 +56,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="w-full h-full" onClick={handleClick}>
+    <div className="w-full h-full bg-transparent" onClick={handleClick}>
       <video ref={videoRef} style={{ position:'fixed',top:0,left:0,width:'320px',height:'240px',opacity:0.01,pointerEvents:'none',zIndex:-1 }} playsInline autoPlay muted />
 
       {error && (
