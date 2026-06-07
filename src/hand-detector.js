@@ -1,8 +1,6 @@
 export async function initHandDetector(videoElement, onProgress) {
   return new Promise((resolve, reject) => {
-    const timeout = setTimeout(() => {
-      reject(new Error('手势模型加载超时'));
-    }, 30000);
+    const timeout = setTimeout(() => reject(new Error('模型加载超时')), 30000);
 
     const hands = new Hands({
       locateFile: (file) =>
@@ -10,7 +8,7 @@ export async function initHandDetector(videoElement, onProgress) {
     });
 
     hands.setOptions({
-      maxNumHands: 2,
+      maxNumHands: 1,
       modelComplexity: 1,
       minDetectionConfidence: 0.5,
       minTrackingConfidence: 0.5
@@ -27,8 +25,7 @@ export async function initHandDetector(videoElement, onProgress) {
     hands.onResults((results) => {
       if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
         window.__lastResults = {
-          multiHandLandmarks: results.multiHandLandmarks,
-          multiHandedness: results.multiHandedness,
+          landmarks: results.multiHandLandmarks[0],
           width: 640, height: 480
         };
       } else {
@@ -53,20 +50,34 @@ export async function initHandDetector(videoElement, onProgress) {
   });
 }
 
-export function detectHands() {
+/** 计算伸出的手指数量 */
+export function countFingers() {
   const r = window.__lastResults;
-  if (!r || !r.multiHandLandmarks || r.multiHandLandmarks.length === 0) return [];
-  return r.multiHandLandmarks.map((landmarks, idx) => ({
-    points: landmarks.map(l => ({
-      x: (1 - l.x) * r.width,
-      y: l.y * r.height
-    })),
-    handedness: r.multiHandedness?.[idx]?.label || 'unknown'
-  }));
+  if (!r) return 0;
+
+  const lm = r.landmarks;
+  // 指尖: 4(拇指), 8(食指), 12(中指), 16(无名指), 20(小指)
+  // MCP:  2(拇指), 5(食指), 9(中指),  13(无名指), 17(小指)
+  const tips = [4, 8, 12, 16, 20];
+  const mcps = [2, 5, 9, 13, 17];
+  let count = 0;
+
+  for (let i = 0; i < 5; i++) {
+    const tip = lm[tips[i]];
+    const mcp = lm[mcps[i]];
+    // 指尖 y < MCP y 表示手指伸出（MediaPipe 坐标系 y 向下）
+    if (tip.y < mcp.y) count++;
+  }
+  return count;
 }
 
-export const LANDMARK = {
-  WRIST: 0, THUMB_TIP: 4, INDEX_TIP: 8, MIDDLE_TIP: 12,
-  RING_TIP: 16, PINKY_TIP: 20, INDEX_MCP: 5, MIDDLE_MCP: 9,
-  RING_MCP: 13, PINKY_MCP: 17
-};
+/** 获取食指指尖屏幕坐标 */
+export function getIndexTip(screenW, screenH) {
+  const r = window.__lastResults;
+  if (!r) return null;
+  const tip = r.landmarks[8]; // 食指指尖
+  return {
+    x: (1 - tip.x) * screenW,
+    y: tip.y * screenH
+  };
+}
