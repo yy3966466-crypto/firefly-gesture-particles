@@ -1,183 +1,217 @@
 import * as THREE from 'three';
-import { isMobile, PARTICLE_COUNT } from './utils.js';
+import { isMobile, PARTICLE_COUNT, dist, rand } from './utils.js';
 import { createVideoElement } from './camera.js';
 import { createScene, handleResize, setVideoAspect } from './scene.js';
-import { createParticleSystem, updateParticleWave } from './particle-engine.js';
-import { createPhysicsEngine, integrate } from './physics.js';
-import { initHandDetector, detectHands } from './hand-detector.js';
-import { createGestureClassifier, classifyGesture, GestureState } from './gesture-classifier.js';
-import { applyRipple, applyAttract, applyExplosion, applyRingAttraction } from './gesture-physics.js';
-import { createAudioEngine } from './audio.js';
-import { createRippleRenderer } from './ripple-renderer.js';
 
-async function main() {
-  // 1. 创建 video 元素（MediaPipe Camera 会管理摄像头）
-  const video = createVideoElement();
-
-  // 2. Three.js 场景
-  const { renderer, scene, camera, bgPlane } = createScene(video);
-
-  // 3. 粒子系统
-  const particles = createParticleSystem(window.innerWidth, window.innerHeight);
-  scene.add(particles.points);
-
-  // 4. 涟漪渲染
-  const rippleRenderer = createRippleRenderer(scene);
-
-  // 5. 物理引擎
-  const physics = createPhysicsEngine(PARTICLE_COUNT);
-
-  // 6-8. UI 元素
-  const loadingEl = document.getElementById('loading');
-  const loadingText = loadingEl.querySelector('p');
-  const guidanceEl = document.getElementById('guidance');
-  const statusEl = document.getElementById('status-indicator');
-  const statusDot = statusEl.querySelector('.dot');
-  const statusLabel = statusEl.querySelector('.label');
-
-  // 更新加载文字
-  loadingText.textContent = '正在加载手势模型...';
-
-  // 手势检测（MediaPipe Camera 管理视频帧推送）
-  const { hands } = await initHandDetector(video, (msg) => {
-    loadingText.textContent = msg;
-  });
-
-  // 设置视频比例（避免背景变形）
-  setTimeout(() => setVideoAspect(video), 500);
-
-  // 手势分类器
-  const classifier = createGestureClassifier();
-
-  // 音效
-  const audio = createAudioEngine();
-
-  loadingEl.classList.add('hidden');
-  guidanceEl.classList.remove('hidden');
-
-  // 首次交互解锁音频
-  let audioStarted = false;
-  function tryStartAudio() {
-    if (!audioStarted) {
-      audio.startAmbient();
-      audioStarted = true;
-    }
+// ── 粒子 Shader ──
+const vertShader = /* glsl */ `
+  attribute float size;
+  attribute float alpha;
+  varying float vAlpha;
+  void main() {
+    vec4 mv = modelViewMatrix * vec4(position, 1.0);
+    gl_PointSize = size * (200.0 / -mv.z);
+    gl_Position = projectionMatrix * mv;
+    vAlpha = alpha;
   }
-  document.addEventListener('click', tryStartAudio, { once: true });
-  document.addEventListener('touchstart', tryStartAudio, { once: true });
+`;
 
-  // 10. 引导文字定时
-  setTimeout(() => guidanceEl.classList.add('hidden'), 5000);
+const fragShader = /* glsl */ `
+  varying float vAlpha;
+  void main() {
+    float d = length(gl_PointCoord - 0.5) * 2.0;
+    float glow = exp(-d * 4.0);
+    gl_FragColor = vec4(1.0, 1.0, 1.0, glow * vAlpha);
+  }
+`;
 
-  // 11. 主循环
-  let lastTime = performance.now();
-  let prevGesture = GestureState.IDLE;
+// ── 粒子系统 ──
+function createParticles(w, h) {
+  const count = PARTICLE_COUNT;
+  const pos = new Float32Array(count * 3);
+  const sizes = new Float32Array(count);
+  const alphas = new Float32Array(count);
+  const baseX = new Float32Array(count);
+  const baseY = new Float32Array(count);
+  const phase = new Float32Array(count);
+  const amp = new Float32Array(count);
+  const freq = new Float32Array(count);
+  const vx = new Float32Array(count);
+  const vy = new Float32Array(count);
 
-  function loop(now) {
-    requestAnimationFrame(loop);
-
-    let dt = (now - lastTime) / 1000;
-    if (dt <= 0) dt = 0.016;
-    if (dt > 0.1) dt = 0.1;
-    lastTime = now;
-
-    const w = window.innerWidth;
-    const h = window.innerHeight;
-
-    // 手势检测（同步读取 MediaPipe 结果）
-    const handData = detectHands();
-    classifyGesture(classifier, handData, dt, 640, 480, w, h);
-
-    const state = classifier.state;
-
-    if (state !== prevGesture) {
-      if (state === GestureState.PALM) {
-        audio.playRipple();
-        const ripple = applyRipple(particles.positions, physics, classifier.handCenter, w, h);
-        rippleRenderer.spawn(ripple.cx, ripple.cy);
-      }
-      if (state === GestureState.FIST_EXPLODE) {
-        audio.playExplosion();
-        applyExplosion(particles.positions, physics, classifier.handCenter, w, h);
-      }
-      if (state === GestureState.CIRCLE_HOLD) {
-        audio.playRing();
-      }
-    }
-
-    if (state === GestureState.PALM) {
-      applyRipple(particles.positions, physics, classifier.handCenter, w, h);
-    }
-    if (state === GestureState.FIST_ATTRACT) {
-      applyAttract(particles.positions, physics, classifier.handCenter, w, h);
-    }
-    if (state === GestureState.CIRCLE_HOLD) {
-      applyRingAttraction(particles.positions, physics, classifier, w, h);
-    }
-
-    updateStatusIndicator(state, statusEl, statusDot, statusLabel);
-
-    prevGesture = state;
-
-    // 物理积分
-    integrate(particles.positions, particles.basePositions, physics, dt, w, h);
-
-    // 波浪更新（未被外力驱动的粒子）
-    updateParticleWave(particles, performance.now() / 1000, dt, physics.driven);
-
-    // 涟漪动画
-    rippleRenderer.update(dt);
-
-    // 渲染
-    renderer.render(scene, camera);
+  for (let i = 0; i < count; i++) {
+    baseX[i] = rand(0, w);
+    baseY[i] = rand(0, h);
+    pos[i * 3] = baseX[i];
+    pos[i * 3 + 1] = baseY[i];
+    sizes[i] = rand(1.5, 3.5);
+    alphas[i] = rand(0.3, 0.7);
+    phase[i] = rand(0, Math.PI * 2);
+    amp[i] = rand(15, 50);
+    freq[i] = rand(0.3, 1.0);
+    vx[i] = 0;
+    vy[i] = 0;
   }
 
-  requestAnimationFrame(loop);
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  geo.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+  geo.setAttribute('alpha', new THREE.BufferAttribute(alphas, 1));
 
-  // 窗口大小调整
-  window.addEventListener('resize', () => {
-    handleResize({ renderer, camera, bgPlane });
-    for (let i = 0; i < PARTICLE_COUNT; i++) {
-      particles.basePositions[i * 2] = (particles.basePositions[i * 2] / w) * window.innerWidth;
-      particles.basePositions[i * 2 + 1] = (particles.basePositions[i * 2 + 1] / h) * window.innerHeight;
-    }
+  const mat = new THREE.ShaderMaterial({
+    vertexShader: vertShader,
+    fragmentShader: fragShader,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false,
+    depthTest: false
   });
+
+  const points = new THREE.Points(geo, mat);
+  return { points, geo, mat, pos, sizes, alphas, baseX, baseY, phase, amp, freq, vx, vy, count };
 }
 
-function updateStatusIndicator(state, el, dot, label) {
-  switch (state) {
-    case GestureState.IDLE:
-      el.className = '';
-      label.textContent = '';
-      break;
-    case GestureState.PALM:
-      el.className = 'active';
-      label.textContent = '涟漪';
-      break;
-    case GestureState.FIST_ATTRACT:
-    case GestureState.FIST_EXPLODE:
-    case GestureState.FIST_RECOVER:
-      el.className = 'active';
-      label.textContent = state === GestureState.FIST_ATTRACT ? '聚拢' :
-                         state === GestureState.FIST_EXPLODE ? '炸开' : '恢复';
-      break;
-    case GestureState.CIRCLE_DRAW:
-    case GestureState.CIRCLE_HOLD:
-      el.className = 'active';
-      label.textContent = '光环';
-      break;
+// ── 水波纹动画 ──
+const ripples = [];
+
+function spawnRipple(x, y) {
+  ripples.push({ x, y, radius: 0, strength: 1.0, life: 0, maxLife: 2.5 });
+}
+
+function updateParticles(p, time, dt, w, h) {
+  for (let i = 0; i < p.count; i++) {
+    // 默认波浪
+    let tx = p.baseX[i] + p.amp[i] * Math.sin(p.freq[i] * time + p.phase[i]);
+    let ty = p.baseY[i] + p.amp[i] * 0.6 * Math.cos(p.freq[i] * time * 1.2 + p.phase[i] + 1);
+
+    // 涟漪力
+    for (const r of ripples) {
+      const d = dist(tx, ty, r.x, r.y);
+      if (d < r.radius + 40 && d > 0.1) {
+        const force = r.strength * (1 - d / (r.radius + 40)) * 30;
+        const dx = (tx - r.x) / d;
+        const dy = (ty - r.y) / d;
+        tx += dx * force;
+        ty += dy * force;
+        p.vx[i] += dx * force * 0.5;
+        p.vy[i] += dy * force * 0.5;
+      }
+    }
+
+    // 惯性衰减
+    tx += p.vx[i];
+    ty += p.vy[i];
+    p.vx[i] *= 0.92;
+    p.vy[i] *= 0.92;
+
+    // 边界
+    if (tx < 0) tx = 0;
+    if (tx > w) tx = w;
+    if (ty < 0) ty = 0;
+    if (ty > h) ty = h;
+
+    p.pos[i * 3] = tx;
+    p.pos[i * 3 + 1] = ty;
   }
+
+  // 更新涟漪
+  for (let i = ripples.length - 1; i >= 0; i--) {
+    ripples[i].life += dt;
+    ripples[i].radius += dt * 200;
+    ripples[i].strength = 1 - ripples[i].life / ripples[i].maxLife;
+    if (ripples[i].life >= ripples[i].maxLife) ripples.splice(i, 1);
+  }
+
+  p.geo.attributes.position.needsUpdate = true;
+}
+
+// ── 涟漪视觉环 ──
+function createRippleVisuals(scene) {
+  const rings = [];
+  return {
+    spawn(x, y) {
+      const geo = new THREE.RingGeometry(5, 8, 48);
+      const mat = new THREE.MeshBasicMaterial({
+        color: 0xffffff, side: THREE.DoubleSide, transparent: true, opacity: 0.4, depthTest: false, depthWrite: false
+      });
+      const ring = new THREE.Mesh(geo, mat);
+      ring.position.set(x, y, 0.1);
+      scene.add(ring);
+      rings.push({ mesh: ring, mat, age: 0, maxAge: 1.5, r: 10 });
+    },
+    update(dt) {
+      for (let i = rings.length - 1; i >= 0; i--) {
+        const r = rings[i];
+        r.age += dt;
+        const t = r.age / r.maxAge;
+        if (t >= 1) {
+          scene.remove(r.mesh);
+          r.mesh.geometry.dispose();
+          r.mat.dispose();
+          rings.splice(i, 1);
+          continue;
+        }
+        const radius = 10 + 280 * t;
+        r.mesh.geometry.dispose();
+        r.mesh.geometry = new THREE.RingGeometry(radius - 2, radius + 2, 48);
+        r.mat.opacity = 0.4 * (1 - t);
+      }
+    }
+  };
+}
+
+// ── 主程序 ──
+async function main() {
+  const video = createVideoElement();
+  const stream = await navigator.mediaDevices.getUserMedia({
+    video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } }
+  });
+  video.srcObject = stream;
+  await video.play();
+  setTimeout(() => setVideoAspect(video), 300);
+
+  const { renderer, scene, camera, bgPlane } = createScene(video);
+  const p = createParticles(window.innerWidth, window.innerHeight);
+  scene.add(p.points);
+
+  const ringViz = createRippleVisuals(scene);
+
+  // UI
+  document.getElementById('loading').classList.add('hidden');
+  document.getElementById('guidance').classList.remove('hidden');
+  setTimeout(() => document.getElementById('guidance').classList.add('hidden'), 4000);
+
+  // 触摸/点击 → 涟漪
+  function onInteract(e) {
+    const x = e.touches ? e.touches[0].clientX : e.clientX;
+    const y = e.touches ? e.touches[0].clientY : e.clientY;
+    spawnRipple(x, y);
+    ringViz.spawn(x, y);
+  }
+  window.addEventListener('touchstart', onInteract, { passive: true });
+  window.addEventListener('click', onInteract);
+
+  // 渲染循环
+  let last = performance.now();
+  function loop(now) {
+    requestAnimationFrame(loop);
+    let dt = (now - last) / 1000;
+    if (dt <= 0) dt = 0.016;
+    if (dt > 0.1) dt = 0.1;
+    last = now;
+    updateParticles(p, now / 1000, dt, window.innerWidth, window.innerHeight);
+    ringViz.update(dt);
+    renderer.render(scene, camera);
+  }
+  requestAnimationFrame(loop);
+
+  window.addEventListener('resize', () => {
+    handleResize({ renderer, camera, bgPlane });
+    setVideoAspect(video);
+  });
 }
 
 main().catch(err => {
-  console.error('启动失败:', err);
-  const loadingEl = document.getElementById('loading');
-  const msg = err.message || String(err);
-  if (msg.includes('not allowed') || msg.includes('Permission')) {
-    loadingEl.innerHTML = `<p style="color:#ff6b6b;">摄像头权限被拒绝<br><small>请允许摄像头访问后刷新页面</small></p>`;
-  } else if (msg.includes('超时')) {
-    loadingEl.innerHTML = `<p style="color:#ffb060;">${msg}<br><small>请检查网络后刷新页面重试</small></p>`;
-  } else {
-    loadingEl.innerHTML = `<p style="color:#ff6b6b;">启动失败: ${msg}<br><small>请确保使用 HTTPS 并授予摄像头权限</small></p>`;
-  }
+  document.getElementById('loading').innerHTML =
+    `<p style="color:#ff6b6b;">启动失败: ${err.message}<br><small>请使用 HTTPS 并允许摄像头</small></p>`;
 });
